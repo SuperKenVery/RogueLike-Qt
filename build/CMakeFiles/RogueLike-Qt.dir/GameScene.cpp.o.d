@@ -1,6 +1,6 @@
-CMakeFiles/RogueLike-Qt.dir/main.cpp.o: \
+CMakeFiles/RogueLike-Qt.dir/GameScene.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/share/asan_ignorelist.txt \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/main.cpp \
+  /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene.cpp \
   /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/QGraphicsView \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/qgraphicsview.h \
@@ -845,21 +845,27 @@ CMakeFiles/RogueLike-Qt.dir/main.cpp.o: \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qbitmap.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/qgraphicsscene.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/QGraphicsScene \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/mainwindow.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/QMainWindow \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/qmainwindow.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/qtabwidget.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/QTimer \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/qtimer.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/qbasictimer.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/QApplication \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/qapplication.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/qcoreapplication.h \
+  /Users/ken/Codes/RogueLike/RogueLike-Qt/player.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/QGraphicsItem \
+  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/qgraphicsitem.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qpainterpath.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers/QImage \
+  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers/QVector2D \
+  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qvectornd.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qevent.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/qcoreevent.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/qeventloop.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/qnativeinterface.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/qcoreapplication_platform.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qguiapplication.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qinputmethod.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/qlocale.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qguiapplication_platform.h
+  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/qiodevice.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/qpointer.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/qurl.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qeventpoint.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qvector2d.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qpointingdevice.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qinputdevice.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qscreen.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/QList \
+  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/QObject \
+  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/QRect \
+  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/QSize \
+  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/QSizeF \
+  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers/QTransform \
+  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/qnativeinterface.h

@@ -111,11 +111,41 @@ CMakeFiles/RogueLike-Qt.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RogueLike-Qt.dir/mainwindow.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ken/Codes/RogueLike/RogueLike-Qt/mainwindow.cpp -o CMakeFiles/RogueLike-Qt.dir/mainwindow.cpp.s
 
+CMakeFiles/RogueLike-Qt.dir/player.cpp.o: CMakeFiles/RogueLike-Qt.dir/flags.make
+CMakeFiles/RogueLike-Qt.dir/player.cpp.o: /Users/ken/Codes/RogueLike/RogueLike-Qt/player.cpp
+CMakeFiles/RogueLike-Qt.dir/player.cpp.o: CMakeFiles/RogueLike-Qt.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ken/Codes/RogueLike/RogueLike-Qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/RogueLike-Qt.dir/player.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RogueLike-Qt.dir/player.cpp.o -MF CMakeFiles/RogueLike-Qt.dir/player.cpp.o.d -o CMakeFiles/RogueLike-Qt.dir/player.cpp.o -c /Users/ken/Codes/RogueLike/RogueLike-Qt/player.cpp
+
+CMakeFiles/RogueLike-Qt.dir/player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RogueLike-Qt.dir/player.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ken/Codes/RogueLike/RogueLike-Qt/player.cpp > CMakeFiles/RogueLike-Qt.dir/player.cpp.i
+
+CMakeFiles/RogueLike-Qt.dir/player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RogueLike-Qt.dir/player.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ken/Codes/RogueLike/RogueLike-Qt/player.cpp -o CMakeFiles/RogueLike-Qt.dir/player.cpp.s
+
+CMakeFiles/RogueLike-Qt.dir/GameScene.cpp.o: CMakeFiles/RogueLike-Qt.dir/flags.make
+CMakeFiles/RogueLike-Qt.dir/GameScene.cpp.o: /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene.cpp
+CMakeFiles/RogueLike-Qt.dir/GameScene.cpp.o: CMakeFiles/RogueLike-Qt.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ken/Codes/RogueLike/RogueLike-Qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/RogueLike-Qt.dir/GameScene.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/RogueLike-Qt.dir/GameScene.cpp.o -MF CMakeFiles/RogueLike-Qt.dir/GameScene.cpp.o.d -o CMakeFiles/RogueLike-Qt.dir/GameScene.cpp.o -c /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene.cpp
+
+CMakeFiles/RogueLike-Qt.dir/GameScene.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/RogueLike-Qt.dir/GameScene.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene.cpp > CMakeFiles/RogueLike-Qt.dir/GameScene.cpp.i
+
+CMakeFiles/RogueLike-Qt.dir/GameScene.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/RogueLike-Qt.dir/GameScene.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene.cpp -o CMakeFiles/RogueLike-Qt.dir/GameScene.cpp.s
+
 # Object files for target RogueLike-Qt
 RogueLike__Qt_OBJECTS = \
 "CMakeFiles/RogueLike-Qt.dir/RogueLike-Qt_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/RogueLike-Qt.dir/main.cpp.o" \
-"CMakeFiles/RogueLike-Qt.dir/mainwindow.cpp.o"
+"CMakeFiles/RogueLike-Qt.dir/mainwindow.cpp.o" \
+"CMakeFiles/RogueLike-Qt.dir/player.cpp.o" \
+"CMakeFiles/RogueLike-Qt.dir/GameScene.cpp.o"
 
 # External object files for target RogueLike-Qt
 RogueLike__Qt_EXTERNAL_OBJECTS =
@@ -123,12 +153,14 @@ RogueLike__Qt_EXTERNAL_OBJECTS =
 RogueLike-Qt.app/Contents/MacOS/RogueLike-Qt: CMakeFiles/RogueLike-Qt.dir/RogueLike-Qt_autogen/mocs_compilation.cpp.o
 RogueLike-Qt.app/Contents/MacOS/RogueLike-Qt: CMakeFiles/RogueLike-Qt.dir/main.cpp.o
 RogueLike-Qt.app/Contents/MacOS/RogueLike-Qt: CMakeFiles/RogueLike-Qt.dir/mainwindow.cpp.o
+RogueLike-Qt.app/Contents/MacOS/RogueLike-Qt: CMakeFiles/RogueLike-Qt.dir/player.cpp.o
+RogueLike-Qt.app/Contents/MacOS/RogueLike-Qt: CMakeFiles/RogueLike-Qt.dir/GameScene.cpp.o
 RogueLike-Qt.app/Contents/MacOS/RogueLike-Qt: CMakeFiles/RogueLike-Qt.dir/build.make
 RogueLike-Qt.app/Contents/MacOS/RogueLike-Qt: /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets
 RogueLike-Qt.app/Contents/MacOS/RogueLike-Qt: /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/QtGui
 RogueLike-Qt.app/Contents/MacOS/RogueLike-Qt: /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/QtCore
 RogueLike-Qt.app/Contents/MacOS/RogueLike-Qt: CMakeFiles/RogueLike-Qt.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ken/Codes/RogueLike/RogueLike-Qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable RogueLike-Qt.app/Contents/MacOS/RogueLike-Qt"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ken/Codes/RogueLike/RogueLike-Qt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable RogueLike-Qt.app/Contents/MacOS/RogueLike-Qt"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/RogueLike-Qt.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

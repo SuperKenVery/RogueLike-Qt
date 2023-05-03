@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QGraphicsView>
+#include <QGraphicsScene>
+#include <QTimer>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,5 +20,8 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    QGraphicsView *graphicsView;
+    QGraphicsScene *scene;
+    QTimer *timer;
 };
 #endif // MAINWINDOW_H

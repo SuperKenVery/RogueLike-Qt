@@ -290,9 +290,21 @@
 	"HEADERS" : 
 	[
 		[
+			"/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene.h",
+			"MU",
+			"EWIEGA46WW/moc_GameScene.cpp",
+			null
+		],
+		[
 			"/Users/ken/Codes/RogueLike/RogueLike-Qt/mainwindow.h",
 			"MU",
 			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"/Users/ken/Codes/RogueLike/RogueLike-Qt/player.h",
+			"MU",
+			"EWIEGA46WW/moc_player.cpp",
 			null
 		]
 	],
@@ -353,8 +365,10 @@
 	"SETTINGS_FILE" : "/Users/ken/Codes/RogueLike/RogueLike-Qt/build/CMakeFiles/RogueLike-Qt_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[ "/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene.cpp", "MU", null ],
 		[ "/Users/ken/Codes/RogueLike/RogueLike-Qt/main.cpp", "MU", null ],
-		[ "/Users/ken/Codes/RogueLike/RogueLike-Qt/mainwindow.cpp", "MU", null ]
+		[ "/Users/ken/Codes/RogueLike/RogueLike-Qt/mainwindow.cpp", "MU", null ],
+		[ "/Users/ken/Codes/RogueLike/RogueLike-Qt/player.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

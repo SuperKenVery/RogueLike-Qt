@@ -12,11 +12,17 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
+set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=address")
+
 set(PROJECT_SOURCES
         main.cpp
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        player.h
+        player.cpp
+        GameScene.h
+        GameScene.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -55,6 +61,8 @@ set_target_properties(RogueLike-Qt PROPERTIES
 install(TARGETS RogueLike-Qt
     BUNDLE DESTINATION .
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR})
+
+install(DIRECTORY images DESTINATION .)
 
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(RogueLike-Qt)

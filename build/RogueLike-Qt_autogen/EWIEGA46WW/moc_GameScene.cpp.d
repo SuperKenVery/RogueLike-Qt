@@ -1,4 +1,4 @@
-/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/EWIEGA46WW/moc_mainwindow.cpp: /Users/ken/Codes/RogueLike/RogueLike-Qt/mainwindow.h \
+/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/EWIEGA46WW/moc_GameScene.cpp: /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene.h \
   /Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/moc_predefs.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
@@ -624,7 +624,6 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/sys/qos.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/time.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include/stdarg.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/QTimer \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/q20memory.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/q20type_traits.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qalgorithms.h \
@@ -636,7 +635,6 @@
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qatomic.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qatomic_cxx11.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qbasicatomic.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qbasictimer.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qbindingstorage.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qbytearray.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qbytearrayalgorithms.h \
@@ -718,7 +716,6 @@
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qtdeprecationmarkers.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qtenvironmentvariables.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qtextstream.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qtimer.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qtmetamacros.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qtnoop.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qtpreprocessorsupport.h \
@@ -763,15 +760,12 @@
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsScene \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsView \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractscrollarea.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsscene.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsview.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qscrollarea.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h \

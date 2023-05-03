@@ -1,4 +1,5 @@
 CMakeFiles/RogueLike-Qt.dir/mainwindow.cpp.o: \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/share/asan_ignorelist.txt \
   /Users/ken/Codes/RogueLike/RogueLike-Qt/mainwindow.cpp \
   /Users/ken/Codes/RogueLike/RogueLike-Qt/mainwindow.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/QMainWindow \
@@ -837,6 +838,19 @@ CMakeFiles/RogueLike-Qt.dir/mainwindow.cpp.o: \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qcursor.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qbitmap.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/qtabwidget.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/QGraphicsView \
+  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/qgraphicsview.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qpainter.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qtextoption.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers/qpen.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/qscrollarea.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/qabstractscrollarea.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/qframe.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/qgraphicsscene.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/QGraphicsScene \
+  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/QTimer \
+  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/qtimer.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/qbasictimer.h \
   /Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/include/./ui_mainwindow.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers/QVariant \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/QApplication \
@@ -855,4 +869,12 @@ CMakeFiles/RogueLike-Qt.dir/mainwindow.cpp.o: \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/qmenu.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/QStatusBar \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/qstatusbar.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/QWidget
+  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/QWidget \
+  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/qmessagebox.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/qdialog.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/QLayout \
+  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/qlayout.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/qlayoutitem.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/qboxlayout.h \
+  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers/qgridlayout.h \
+  /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene.h
