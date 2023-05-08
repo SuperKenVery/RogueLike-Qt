@@ -23,6 +23,7 @@ protected:
 
 private:
     QVector2D direction=QVector2D(0,0);
+    bool valid();
 
     int speed=10;
 

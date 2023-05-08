@@ -4,6 +4,8 @@ file(REMOVE_RECURSE
   "RogueLike-Qt_autogen"
   "CMakeFiles/RogueLike-Qt.dir/GameScene.cpp.o"
   "CMakeFiles/RogueLike-Qt.dir/GameScene.cpp.o.d"
+  "CMakeFiles/RogueLike-Qt.dir/Map.cpp.o"
+  "CMakeFiles/RogueLike-Qt.dir/Map.cpp.o.d"
   "CMakeFiles/RogueLike-Qt.dir/RogueLike-Qt_autogen/mocs_compilation.cpp.o"
   "CMakeFiles/RogueLike-Qt.dir/RogueLike-Qt_autogen/mocs_compilation.cpp.o.d"
   "CMakeFiles/RogueLike-Qt.dir/main.cpp.o"

@@ -5,4 +5,11 @@
 /Users/ken/Codes/RogueLike/RogueLike-Qt/build/CMakeFiles/install.dir
 /Users/ken/Codes/RogueLike/RogueLike-Qt/build/CMakeFiles/install/local.dir
 /Users/ken/Codes/RogueLike/RogueLike-Qt/build/CMakeFiles/install/strip.dir
+/Users/ken/Codes/RogueLike/RogueLike-Qt/build/CMakeFiles/RogueLike-Qt_autogen_timestamp_deps.dir
 /Users/ken/Codes/RogueLike/RogueLike-Qt/build/CMakeFiles/RogueLike-Qt_autogen.dir
+/Users/ken/Codes/RogueLike/RogueLike-Qt/build/json/CMakeFiles/edit_cache.dir
+/Users/ken/Codes/RogueLike/RogueLike-Qt/build/json/CMakeFiles/rebuild_cache.dir
+/Users/ken/Codes/RogueLike/RogueLike-Qt/build/json/CMakeFiles/list_install_components.dir
+/Users/ken/Codes/RogueLike/RogueLike-Qt/build/json/CMakeFiles/install.dir
+/Users/ken/Codes/RogueLike/RogueLike-Qt/build/json/CMakeFiles/install/local.dir
+/Users/ken/Codes/RogueLike/RogueLike-Qt/build/json/CMakeFiles/install/strip.dir

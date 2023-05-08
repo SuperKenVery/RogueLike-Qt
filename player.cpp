@@ -1,9 +1,11 @@
 #include "player.h"
+#include "GameScene.h"
 #include <QPainter>
 #include<QKeyEvent>
 #include <QtCore/qrect.h>
 #include <QGraphicsItem>
 #include <QGraphicsView>
+#include <QtGui/qpainterpath.h>
 #include <QtWidgets/qgraphicsitem.h>
 #include <QtWidgets/qwidget.h>
 #include <cstdio>
@@ -22,6 +24,7 @@ void Player::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QW
 }
 
 void Player::keyPressEvent(QKeyEvent *event){
+    printf("Key pressed\n");
     switch(event->key()){
     case Qt::Key_A:
         this->direction.setX(-1);
@@ -62,19 +65,36 @@ void Player::advance(int step){
     if(this->direction.length()==0) return;
     if(step==0) return;
 
-    // Advance
-    auto newPos=mapToParent(this->direction.x()/this->direction.length()*this->speed,this->direction.y()/this->direction.length()*this->speed);
-    auto newArea=QRectF(newPos,this->boundingRect().size());
+    for(int i=0;i<this->speed;i++){
+        // Advance
+        auto oldPos=this->pos();
+        setPos(mapToParent(this->direction.x()/this->direction.length(),this->direction.y()/this->direction.length()));
 
-    // Bound check
-    if(this->scene()->sceneRect().contains(newArea)==false){
-        auto s=this->scene()->sceneRect();
-        printf("Out of bound. Scene at (%f,%f,%f,%f), pos at (%f,%f,%f,%f)\n",s.x(),s.y(),s.width(),s.height(),newArea.x(),newArea.y(),newArea.width(),newArea.height());
-        return;
+        if(this->valid()==false){
+            setPos(oldPos);
+            break;
+        }
     }
 
-    // Update position
-    setPos(newPos);
+}
+
+bool Player::valid(){
+    // Bound check
+    if(this->scene()->sceneRect().contains(this->boundingRect())==false){
+        auto s=this->scene()->sceneRect();
+        printf("Out of bound. Scene at (%f,%f,%f,%f), pos at (%f,%f,%f,%f)\n",s.x(),s.y(),s.width(),s.height(),this->boundingRect().x(),this->boundingRect().y(),this->boundingRect().width(),this->boundingRect().height());
+        return false;
+    }
+
+    // Collision check
+    auto scene=static_cast<GameScene*>(this->scene());
+    auto walls=scene->walls;
+
+    for(auto wall:walls)
+        if(wall->collidesWithItem(this))
+            return false;
+
+    return true;
 }
 
 QRectF Player::boundingRect() const{

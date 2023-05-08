@@ -2,6 +2,8 @@ cmake_minimum_required(VERSION 3.5)
 
 project(RogueLike-Qt VERSION 0.1 LANGUAGES CXX)
 
+add_subdirectory(json)
+
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
@@ -23,6 +25,8 @@ set(PROJECT_SOURCES
         player.cpp
         GameScene.h
         GameScene.cpp
+        Map.cpp
+        Map.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -48,7 +52,8 @@ else()
     endif()
 endif()
 
-target_link_libraries(RogueLike-Qt PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+
+target_link_libraries(RogueLike-Qt PRIVATE Qt${QT_VERSION_MAJOR}::Widgets nlohmann_json::nlohmann_json)
 
 set_target_properties(RogueLike-Qt PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
