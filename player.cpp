@@ -11,20 +11,38 @@
 #include <cstdio>
 #include <QGraphicsWidget>
 
-Player::Player(QImage image):
-    image(image)
+/*
+Construct a player
+
+Config Example:
 {
+    "image":"images/player.png",
+    "life":120,
+    "speed":5,
+    "size":50,
+    "weapon":{
+        "attack":5,
+        "distance":250
+    }
+}
+*/
+Player::Player(json config,GameScene *scene):Base(config["life"],config["size"],QImage(QString::fromStdString(config["image"]))){
+    this->speed=config["speed"];
+
+    this->weapon=new Weapon(
+        config["weapon"],
+        this
+    );
+
     this->setFlags(QGraphicsItem::ItemIsMovable|QGraphicsItem::ItemIsSelectable|QGraphicsItem::ItemIsFocusable);
 
 }
 
-void Player::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget){
-    QRect pos(-this->image.width()/2,-this->image.height()/2,this->image.width()/2,this->image.height()/2);
-    painter->drawImage(pos,this->image);
+void Player::setAttackables(vector<Base *> attackables){
+    this->weapon->setAttackables(attackables);
 }
 
 void Player::keyPressEvent(QKeyEvent *event){
-    printf("Key pressed\n");
     switch(event->key()){
     case Qt::Key_A:
         this->direction.setX(-1);
@@ -68,7 +86,7 @@ void Player::advance(int step){
     for(int i=0;i<this->speed;i++){
         // Advance
         auto oldPos=this->pos();
-        setPos(mapToParent(this->direction.x()/this->direction.length(),this->direction.y()/this->direction.length()));
+        setPos(mapToParent(this->direction.toPointF()/this->direction.length()));
 
         if(this->valid()==false){
             setPos(oldPos);
@@ -78,28 +96,7 @@ void Player::advance(int step){
 
 }
 
-bool Player::valid(){
-    // Bound check
-    if(this->scene()->sceneRect().contains(this->boundingRect())==false){
-        auto s=this->scene()->sceneRect();
-        printf("Out of bound. Scene at (%f,%f,%f,%f), pos at (%f,%f,%f,%f)\n",s.x(),s.y(),s.width(),s.height(),this->boundingRect().x(),this->boundingRect().y(),this->boundingRect().width(),this->boundingRect().height());
-        return false;
-    }
-
-    // Collision check
-    auto scene=static_cast<GameScene*>(this->scene());
-    auto walls=scene->walls;
-
-    for(auto wall:walls)
-        if(wall->collidesWithItem(this))
-            return false;
-
-    return true;
+void Player::die(){
+    // TODO: die
 }
 
-QRectF Player::boundingRect() const{
-    return QRectF(-float(this->image.width())/2,
-                    -float(this->image.height())/2,
-                    float(this->image.width())/2,
-                    float(this->image.height())/2);
-}

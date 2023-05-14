@@ -1,4 +1,5 @@
 #include "GameScene.h"
+#include "Enemy.h"
 #include "Map.h"
 #include <QImage>
 #include <QtCore/qlogging.h>
@@ -17,6 +18,7 @@ QGraphicsScene(parent){
     // Load configuration file
     ifstream config_file("config.json");
     config_file >> this->config;
+    auto &config=this->config;
 
     // Set size
     this->setSceneRect(-400,-300,800,600);
@@ -40,11 +42,26 @@ QGraphicsScene(parent){
     this->addItem(this->map);
 
     // Create a player
-    this->player=new Player(QImage("images/player.png"));
+    this->player=new Player(config["players"][1],this);
     this->player->setPos(0,0);
     this->player->focusItem();
     // this->setFocusItem(this->player);
     this->addItem(this->player);
 
+    this->player->setAttackables(this->enemies);
+
+    // Create an enemy
+    for(auto i=0;i<1;i++){
+        auto e=new Enemy(config["enemies"][i+1],this);
+        e->setPos(-100,-100);
+        e->setAttackables({this->player});
+        this->enemies.push_back(e);
+        this->addItem(e);
+    }
 }
+
+void GameScene::newEnemy(){
+
+}
+
 

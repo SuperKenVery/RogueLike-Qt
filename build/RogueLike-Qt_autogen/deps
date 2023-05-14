@@ -690,11 +690,17 @@ RogueLike-Qt_autogen/timestamp: \
 	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale.h \
 	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_time.h \
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include/stdarg.h \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/Base.cpp \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/Base.h \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/CMakeLists.txt \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/Enemy.cpp \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/Enemy.h \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene.cpp \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene.h \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/Map.cpp \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/Map.h \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/Weapon.cpp \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/Weapon.h \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/build/CMakeFiles/3.26.3/CMakeCXXCompiler.cmake \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/build/CMakeFiles/3.26.3/CMakeSystem.cmake \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/moc_predefs.h \
@@ -858,8 +864,6 @@ RogueLike-Qt_autogen/timestamp: \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qvarlengtharray.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qxptype_traits.h \
-	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/QImage \
-	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/QVector2D \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qaction.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qbitmap.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qbrush.h \
@@ -873,7 +877,6 @@ RogueLike-Qt_autogen/timestamp: \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qkeysequence.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpaintdevice.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpainter.h \
-	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpainterpath.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpalette.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpen.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpixelformat.h \
@@ -887,15 +890,12 @@ RogueLike-Qt_autogen/timestamp: \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qtguiexports.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qtguiglobal.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qtransform.h \
-	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qvectornd.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
-	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsItem \
 	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsScene \
 	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsView \
 	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
 	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractscrollarea.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \
-	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsitem.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsscene.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsview.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h \

@@ -1,31 +1,54 @@
 #include "Map.h"
+#include "GameScene.h"
 #include <QtCore/qrect.h>
 #include <QtGui/qimage.h>
 #include <QtWidgets/qgraphicsitem.h>
 #include <QtWidgets/qgraphicsscene.h>
 #include <vector>
 
-Map::Map(vector<vector<block_type>> matrix, QGraphicsScene *scene){
-    this->setPos(0,0);
-    this->blocks=vector<vector<MapBlock*>>(matrix.size(), vector<MapBlock*>(matrix[0].size()));
+/*
+Construct a Map
 
-    auto scenerect=scene->sceneRect();
+
+Example Config:
+[
+    [0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,1,0,0,0,0],
+    [0,0,0,0,0,1,0,0,0,0],
+    [0,0,0,1,1,1,0,0,0,0],
+    [0,0,0,1,0,0,0,0,0,0],
+    [0,0,0,1,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0]
+]
+Where 0 is ground, 1 is wall.
+*/
+Map::Map(json config, GameScene *scene):
+blocks(config.size(),vector<MapBlock*>(config[0].size())){
+    this->setPos(0,0);
+    vector<vector<block_type>> matrix(config.size(),vector<block_type>(config[0].size()));
+
+    auto scenerect=(static_cast<QGraphicsScene*>(scene))->sceneRect();
     auto block_width=scenerect.width()/matrix[0].size();
     auto block_height=scenerect.height()/matrix.size();
 
-    for(auto y=0;y<matrix.size();y++){
-        auto line=matrix[y];
+    for(auto y=0;y<config.size();y++){
+        auto line=config[y];
         for(auto x=0;x<line.size();x++){
             auto type=line[x];
-
-            auto block=new MapBlock(this,QRect(scenerect.left()+x*block_width,scenerect.top()+y*block_height,block_width,block_height),type);
-            this->blocks[y][x]=block;
-
+            if(type!=ground&&type!=wall){
+                printf("Invalid block type at line %d, column %d\n",y+1,x+1);
+                exit(1);
+            }
+            matrix[y][x]=type;
+            this->blocks[y][x]=new MapBlock(
+                this,
+                QRect(scenerect.left()+x*block_width,scenerect.top()+y*block_height,block_width,block_height),
+                type);
             if(type==block_type::wall)
-                this->walls.push_back(block);
+                this->walls.push_back(this->blocks[y][x]);
         }
     }
-
     this->images[block_type::ground]=QImage("images/ground.jpeg");
     this->images[block_type::wall]=QImage("images/wall.jpeg");
 }
@@ -50,6 +73,9 @@ QRectF MapBlock::boundingRect() const {
 
 void MapBlock::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget){
     auto parent=static_cast<Map*>(this->parentItem());
+    // TODO: cache the image lookup result
+
+    // The item's position is actually (0,0). In this way we draw into the correct position.
     painter->drawImage(this->position,parent->images[this->type]);
 }
 

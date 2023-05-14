@@ -34,5 +34,23 @@
   "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/include -I/Users/ken/Codes/RogueLike/RogueLike-Qt/json/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers -iframework /Users/ken/Qt/6.5.0/macos/lib -isystem /Users/ken/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/ken/Qt/6.5.0/macos/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers  -fsanitize=address -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/RogueLike-Qt.dir/Map.cpp.o -c /Users/ken/Codes/RogueLike/RogueLike-Qt/Map.cpp",
   "file": "/Users/ken/Codes/RogueLike/RogueLike-Qt/Map.cpp",
   "output": "CMakeFiles/RogueLike-Qt.dir/Map.cpp.o"
+},
+{
+  "directory": "/Users/ken/Codes/RogueLike/RogueLike-Qt/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/include -I/Users/ken/Codes/RogueLike/RogueLike-Qt/json/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers -iframework /Users/ken/Qt/6.5.0/macos/lib -isystem /Users/ken/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/ken/Qt/6.5.0/macos/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers  -fsanitize=address -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/RogueLike-Qt.dir/Enemy.cpp.o -c /Users/ken/Codes/RogueLike/RogueLike-Qt/Enemy.cpp",
+  "file": "/Users/ken/Codes/RogueLike/RogueLike-Qt/Enemy.cpp",
+  "output": "CMakeFiles/RogueLike-Qt.dir/Enemy.cpp.o"
+},
+{
+  "directory": "/Users/ken/Codes/RogueLike/RogueLike-Qt/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/include -I/Users/ken/Codes/RogueLike/RogueLike-Qt/json/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers -iframework /Users/ken/Qt/6.5.0/macos/lib -isystem /Users/ken/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/ken/Qt/6.5.0/macos/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers  -fsanitize=address -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/RogueLike-Qt.dir/Base.cpp.o -c /Users/ken/Codes/RogueLike/RogueLike-Qt/Base.cpp",
+  "file": "/Users/ken/Codes/RogueLike/RogueLike-Qt/Base.cpp",
+  "output": "CMakeFiles/RogueLike-Qt.dir/Base.cpp.o"
+},
+{
+  "directory": "/Users/ken/Codes/RogueLike/RogueLike-Qt/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/include -I/Users/ken/Codes/RogueLike/RogueLike-Qt/json/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers -iframework /Users/ken/Qt/6.5.0/macos/lib -isystem /Users/ken/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/ken/Qt/6.5.0/macos/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers  -fsanitize=address -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/RogueLike-Qt.dir/Weapon.cpp.o -c /Users/ken/Codes/RogueLike/RogueLike-Qt/Weapon.cpp",
+  "file": "/Users/ken/Codes/RogueLike/RogueLike-Qt/Weapon.cpp",
+  "output": "CMakeFiles/RogueLike-Qt.dir/Weapon.cpp.o"
 }
 ]

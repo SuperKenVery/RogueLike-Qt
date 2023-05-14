@@ -1,6 +1,7 @@
 #ifndef Map_h
 #define Map_h
 
+// #include "GameScene.h"
 #include "player.h"
 #include <QGraphicsView>
 #include <QGraphicsScene>
@@ -11,6 +12,10 @@
 #include <QtWidgets/qgraphicsscene.h>
 #include <vector>
 #include <unordered_map>
+#include <nlohmann/json.hpp>
+using json=nlohmann::json;
+
+class GameScene;
 
 using namespace std;
 
@@ -32,10 +37,11 @@ private:
 
 class Map: public QGraphicsItem {
 public:
-    Map(vector<vector<block_type>> matrix, QGraphicsScene *scene);
+    Map(json config,GameScene *scene);
     QRectF boundingRect() const override;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
                QWidget *widget) override;
+    void advance(int step) override;
     unordered_map<block_type, QImage> images;
     vector<MapBlock*> walls;
 private:

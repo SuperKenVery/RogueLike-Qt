@@ -1,5 +1,5 @@
 {
-    "map_help":"0 is ground, 0 is wall",
+    "map_help":"0 is ground, 1 is wall",
     "map":[
         [0,0,0,0,0,0,0,0,0,0],
         [0,0,0,0,0,0,0,0,0,0],
@@ -12,21 +12,54 @@
     ],
     "players":[
         {
+            "help":"An object in this list should be fed to the player's constructor"
+        },
+        {
             "image":"images/player.png",
             "life":100,
-            "attack":10,
-            "speed":10
+            "speed":10,
+            "size":50,
+            "weapon":{
+                "attack":5,
+                "range":250
+            }
         },
         {
             "image":"images/player.png",
             "life":120,
-            "attack":15,
-            "speed":5
+            "speed":5,
+            "size":50,
+            "weapon":{
+                "attack":5,
+                "range":250
+            }
         }
     ],
     "enemies":[
         {
-
+            "help":"An object in this list should be fed to the enemy's constructor"
+        },
+        {
+            "image":"images/enemy.png",
+            "life":30,
+            "move_strategy":"towards_player",
+            "speed":5,
+            "size":50,
+            "weapon":{
+                "attack":10,
+                "range":50
+            }
+        },
+        {
+            "image":"images/enemy.png",
+            "life":30,
+            "move_strategy":"towards_player",
+            "speed":5,
+            "size":50,
+            "weapon":{
+                "attack":5,
+                "range":250
+            }
         }
     ]
 }

@@ -27,6 +27,14 @@ set(PROJECT_SOURCES
         GameScene.cpp
         Map.cpp
         Map.h
+        Enemy.h
+        Enemy.cpp
+        Weapon.h
+        Weapon.h
+        Base.h
+        Base.cpp
+        Weapon.h
+        Weapon.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

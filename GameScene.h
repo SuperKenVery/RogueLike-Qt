@@ -1,8 +1,7 @@
 #ifndef GameScene_h
 #define GameScene_h
 
-#include "Map.h"
-#include "player.h"
+#include <vector>
 #include <QGraphicsView>
 #include <QGraphicsScene>
 #include <QtCore/qtmetamacros.h>
@@ -10,16 +9,26 @@
 #include <QtWidgets/qwidget.h>
 #include <nlohmann/json.hpp>
 using json=nlohmann::json;
+using namespace std;
+
+class Player;
+class Map;
+class MapBlock;
+class Enemy;
+class Base;
 
 class GameScene: public QGraphicsScene{
     Q_OBJECT
 public:
     GameScene(QWidget *parent=nullptr);
     vector<MapBlock*> walls;
-private:
     json config;
     Map *map;
     Player *player;
+    vector<Base*> enemies;
+public slots:
+    void newEnemy();
+private:
 };
 
 #endif
