@@ -1,5 +1,6 @@
 #include "Map.h"
 #include "GameScene.h"
+#include <QtCore/qpoint.h>
 #include <QtCore/qrect.h>
 #include <QtGui/qimage.h>
 #include <QtWidgets/qgraphicsitem.h>
@@ -24,9 +25,9 @@ Example Config:
 Where 0 is ground, 1 is wall.
 */
 Map::Map(json config, GameScene *scene):
-blocks(config.size(),vector<MapBlock*>(config[0].size())){
+blocks(config.size(),vector<MapBlock*>(config[0].size())),
+matrix(config.size(),vector<block_type>(config[0].size())){
     this->setPos(0,0);
-    vector<vector<block_type>> matrix(config.size(),vector<block_type>(config[0].size()));
 
     auto scenerect=(static_cast<QGraphicsScene*>(scene))->sceneRect();
     auto block_width=scenerect.width()/matrix[0].size();
@@ -79,3 +80,10 @@ void MapBlock::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, 
     painter->drawImage(this->position,parent->images[this->type]);
 }
 
+QPointF Map::getFreePos(){
+    for(auto line: this->blocks)
+        for(auto i: line)
+            if(i->type==ground)
+                return i->position.center();
+
+}

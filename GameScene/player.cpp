@@ -26,20 +26,24 @@ Config Example:
     }
 }
 */
-Player::Player(json config,GameScene *scene):Base(config["life"],config["size"],QImage(QString::fromStdString(config["image"]))){
+
+
+Player::Player(json config,attackable_list *attackables,GameScene *scene):
+Base(config["life"],config["size"],QImage(QString::fromStdString(config["image"]))){
     this->speed=config["speed"];
 
     this->weapon=new Weapon(
         config["weapon"],
+        attackables,
         this
     );
 
-    this->setFlags(QGraphicsItem::ItemIsMovable|QGraphicsItem::ItemIsSelectable|QGraphicsItem::ItemIsFocusable);
+    this->setFlags(QGraphicsItem::ItemIsSelectable|QGraphicsItem::ItemIsFocusable);
 
 }
 
-void Player::setAttackables(vector<Base *> attackables){
-    this->weapon->setAttackables(attackables);
+Player::~Player(){
+    delete this->weapon;
 }
 
 void Player::keyPressEvent(QKeyEvent *event){

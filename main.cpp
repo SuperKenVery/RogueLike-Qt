@@ -1,5 +1,5 @@
 // #include "mainwindow.h"
-#include "GameScene.h"
+#include "GameScene/GameScene.h"
 #include "mainwindow.h"
 
 #include <QApplication>

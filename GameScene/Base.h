@@ -5,6 +5,8 @@
 #include <QtCore/qrect.h>
 #include <QtGui/qimage.h>
 #include <QtWidgets/qgraphicsitem.h>
+#include <vector>
+using namespace std;
 
 class Base: public QGraphicsItem{
 public:
@@ -15,7 +17,7 @@ public:
     virtual void die()=0;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override final;
     QRectF boundingRect() const override final;
-private:
+protected:
     uint life,size;
     QImage image;
 };

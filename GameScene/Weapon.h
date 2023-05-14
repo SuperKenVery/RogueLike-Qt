@@ -6,20 +6,23 @@
 #include <QtWidgets/qgraphicsitem.h>
 #include <QtWidgets/qgraphicsscene.h>
 #include <nlohmann/json.hpp>
-#include "Base.h"
+
 using json=nlohmann::json;
 using namespace std;
 
+class Base;
+typedef vector<Base*> attackable_list;
+
 class Weapon: public QGraphicsItem{
 public:
-    Weapon(json config,QGraphicsItem* parent);
+    Weapon(json config,attackable_list *attackables,QGraphicsItem* parent);
     QRectF boundingRect() const override;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
     void advance(int step) override;
-    void setAttackables(vector<Base*> attackables);
+    void setAttackables(vector<Base*> *attackables);
 private:
     uint attack,range;
-    vector<Base*> attackables;
+    vector<Base*> *attackables;
 };
 
 #endif

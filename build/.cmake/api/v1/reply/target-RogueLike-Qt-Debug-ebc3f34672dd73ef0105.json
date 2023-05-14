@@ -208,7 +208,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -fsanitize=address -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+					"fragment" : " -fsanitize=thread -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
 				}
 			],
 			"defines" : 
@@ -305,11 +305,11 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "RogueLike-Qt_autogen::@6890427a1f51a3e7e1df"
+			"id" : "RogueLike-Qt_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "RogueLike-Qt_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "RogueLike-Qt_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "RogueLike-Qt::@6890427a1f51a3e7e1df",
@@ -332,7 +332,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-fsanitize=address -g",
+				"fragment" : "-fsanitize=thread -g",
 				"role" : "flags"
 			},
 			{

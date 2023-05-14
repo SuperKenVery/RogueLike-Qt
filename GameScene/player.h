@@ -14,13 +14,15 @@
 #include "Weapon.h"
 using json=nlohmann::json;
 
+typedef vector<Base*> attackable_list;
+
 class Player : public Base
 {
 public:
-    Player(json config,GameScene *scene);
+    Player(json config,attackable_list *attackables,GameScene *scene);
+    ~Player();
     QImage image;
     void die() override;
-    void setAttackables(vector<Base*> attackables);
 
 protected:
     void advance(int step) override;

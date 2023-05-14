@@ -6,7 +6,7 @@
 #include <QtWidgets/qmessagebox.h>
 #include <QtWidgets/qgraphicsview.h>
 #include <QLayout>
-#include "GameScene.h"
+#include "GameScene/GameScene.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)

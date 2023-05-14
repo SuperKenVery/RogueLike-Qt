@@ -4,6 +4,7 @@
 #include <QGraphicsItem>
 #include <QGraphicsScene>
 #include <QPainter>
+#include <QtCore/qpoint.h>
 #include <QtGui/qvectornd.h>
 #include <functional>
 #include <unordered_map>
@@ -18,19 +19,18 @@ using namespace std;
 
 class Enemy;
 typedef std::function<void(Enemy*)> move_strategy;
+typedef vector<Base*> attackable_list;
 
 class Enemy: public Base{
 public:
-    Enemy(json config,GameScene *scene);
+    Enemy(json config,attackable_list *attackables,GameScene *scene);
     static unordered_map<string, move_strategy> move_strategies;
     void die() override;
-    void setAttackables(vector<Base*> attackables);
 protected:
     void advance(int step) override;
 private:
     Weapon *weapon;
-    QImage image;
-    uint life,speed,size;
+    uint speed;
     move_strategy strategy;
     QVector2D direction;
 };

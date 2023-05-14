@@ -60,6 +60,17 @@
                 "attack":5,
                 "range":250
             }
+        },
+        {
+            "image":"images/enemy.png",
+            "life":30,
+            "move_strategy":"stupid",
+            "speed":5,
+            "size":50,
+            "weapon":{
+                "attack":5,
+                "range":250
+            }
         }
     ]
 }
