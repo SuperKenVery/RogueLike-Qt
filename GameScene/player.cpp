@@ -89,22 +89,21 @@ void Player::keyReleaseEvent(QKeyEvent *event){
 }
 
 void Player::advance(int step){
-    printf("Player advance\n");
     // Basic check
-    if(this->direction.length()==0) return;
     if(step==0) return;
 
     // Move
-    for(int i=0;i<this->speed;i++){
-        // Advance
-        auto oldPos=this->pos();
-        setPos(mapToParent(this->direction.toPointF()/this->direction.length()));
+    if(this->direction.length()!=0)
+        for(int i=0;i<this->speed;i++){
+            // Advance
+            auto oldPos=this->pos();
+            setPos(mapToParent(this->direction.toPointF()/this->direction.length()));
 
-        if(this->valid()==false){
-            setPos(oldPos);
-            break;
+            if(this->valid()==false){
+                setPos(oldPos);
+                break;
+            }
         }
-    }
 
     // Enhance
     if(this->weapon->hp>=*this->next_enhance_hp){
@@ -118,11 +117,10 @@ void Player::advance(int step){
     }else{
         // printf("HP is %d, not enough to enhance\n",this->weapon->hp);
     }
-
-
 }
 
 void Player::enhance(){
+    static uint enhance_count=0;
     static vector<pair<QString,enhance_action>> enhance_options={
         {
             "Speed 1.5x",
@@ -156,14 +154,23 @@ void Player::enhance(){
         }
     };
 
-    shuffle(enhance_options.begin(),enhance_options.end(),default_random_engine(time(NULL)));
+    static function<void()> do_enhance=[=](){
+        shuffle(enhance_options.begin(),enhance_options.end(),default_random_engine(time(NULL)));
 
-    this->enhance_panel=new EnhancePanel(
-        {enhance_options[0],enhance_options[1],enhance_options[2]},
-        this->scene()->views()[0]
-    );
-    this->enhance_panel->show();
-    // this->scene()->views()[0]->parentWidget()
+        auto panel=new EnhancePanel(
+            {enhance_options[0],enhance_options[1],enhance_options[2]},
+            [&](){
+                enhance_count--;
+                if(enhance_count>0) do_enhance();
+            },
+            this->scene()->views()[0]
+        );
+        panel->show();
+    };
+
+    enhance_count++;
+    if(enhance_count==1)
+        do_enhance();
 }
 
 void Player::die(){

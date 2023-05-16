@@ -84,6 +84,8 @@ void GameScene::debug_panel(){
                 printf("Weapon Attack 3x\n");
             }
         }
+    },[](){
+        printf("Enhancement done\n");
     },this->views()[0]);
     panel->show();
 }

@@ -2,10 +2,10 @@
 #include "EnhanceOption.h"
 #include <QtWidgets/qgraphicsview.h>
 
-EnhancePanel::EnhancePanel(vector<pair<QString,enhance_action>> enhancements,QWidget *parent):
-QWidget(parent){
+EnhancePanel::EnhancePanel(vector<pair<QString,enhance_action>> enhancements,enhance_callback cb,QWidget *parent):
+QWidget(parent),
+cb(cb){
     auto width=this->parentWidget()->width();
-    width=800;
     auto x=0,w=width/3;
     for(auto enhancement:enhancements){
         auto [msg, action]=enhancement;
@@ -16,11 +16,7 @@ QWidget(parent){
     }
 
     // Move to bottom
-    printf("Parent height: %d\n",this->parentWidget()->height());
-    // this->move(0,((QGraphicsView*)this->parent())->height()-100);
-    // Hardcode 600 for now
-    // TODO: dynamically get height
-    this->move(0,600-this->height()-15);
+    this->move(0,this->parentWidget()->height()-this->height()-15);
 }
 
 void EnhancePanel::enhanced(){
@@ -31,4 +27,5 @@ EnhancePanel::~EnhancePanel(){
     for(auto *i: this->options){
         delete i;
     }
+    this->cb();
 }

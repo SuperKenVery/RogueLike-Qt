@@ -11,12 +11,15 @@ size(size){
     else this->image=image;
 }
 
-void Base::harm(uint damage){
+uint Base::harm(uint damage){
     if(damage>this->life){
+        auto ret=this->life;
         this->life=0;
         this->die();
+        return ret;
     }else{
         this->life-=damage;
+        return damage;
     }
 }
 

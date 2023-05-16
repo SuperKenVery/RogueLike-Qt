@@ -32,7 +32,6 @@ protected:
 
 private:
     void enhance();
-    EnhancePanel *enhance_panel;
     Weapon *weapon;
     QVector2D direction=QVector2D(0,0);
     uint speed;

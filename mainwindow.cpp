@@ -21,8 +21,6 @@ MainWindow::MainWindow(QWidget *parent)
     this->setCentralWidget(this->graphicsView);
     this->setFixedSize(bound.width(),bound.height());
 
-    // ((GameScene*)this->scene)->debug_panel();
-
     this->timer=new QTimer;
     connect(timer, &QTimer::timeout, this->scene, &QGraphicsScene::advance);
     timer->start(1000 / 60);
