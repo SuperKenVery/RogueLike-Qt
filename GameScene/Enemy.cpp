@@ -80,6 +80,8 @@ Base(config["life"],config["size"],QImage(QString::fromStdString(config["image"]
 
 
 void Enemy::advance(int step){
+    Base::advance(step);
+
     for(auto i=0;i<step;i++){
         auto old_pos=this->pos();
         this->strategy(this);

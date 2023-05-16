@@ -1,6 +1,7 @@
 #ifndef Base_h
 #define Base_h
 
+#include "Animations/Animation.h"
 #include <QGraphicsItem>
 #include <QtCore/qrect.h>
 #include <QtGui/qimage.h>
@@ -17,6 +18,8 @@ public:
     virtual void die()=0;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override final;
     QRectF boundingRect() const override final;
+    void advance(int step) override;
+    vector<Animation*> animations;
 protected:
     uint life,size;
     QImage image;

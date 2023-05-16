@@ -52,7 +52,7 @@ build cmake_object_order_depends_target_RogueLike-Qt: phony || RogueLike-Qt_auto
 build CMakeFiles/RogueLike-Qt.dir/RogueLike-Qt_autogen/mocs_compilation.cpp.o: CXX_COMPILER__RogueLike-Qt_unscanned_Debug /Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_RogueLike-Qt
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/RogueLike-Qt.dir/RogueLike-Qt_autogen/mocs_compilation.cpp.o.d
-  FLAGS = -fsanitize=thread -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -fsanitize=address -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
   INCLUDES = -I/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/include -I/Users/ken/Codes/RogueLike/RogueLike-Qt/json/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers -iframework /Users/ken/Qt/6.5.0/macos/lib -isystem /Users/ken/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/ken/Qt/6.5.0/macos/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/RogueLike-Qt.dir
   OBJECT_FILE_DIR = CMakeFiles/RogueLike-Qt.dir/RogueLike-Qt_autogen
@@ -60,7 +60,7 @@ build CMakeFiles/RogueLike-Qt.dir/RogueLike-Qt_autogen/mocs_compilation.cpp.o: C
 build CMakeFiles/RogueLike-Qt.dir/main.cpp.o: CXX_COMPILER__RogueLike-Qt_unscanned_Debug /Users/ken/Codes/RogueLike/RogueLike-Qt/main.cpp || cmake_object_order_depends_target_RogueLike-Qt
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/RogueLike-Qt.dir/main.cpp.o.d
-  FLAGS = -fsanitize=thread -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -fsanitize=address -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
   INCLUDES = -I/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/include -I/Users/ken/Codes/RogueLike/RogueLike-Qt/json/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers -iframework /Users/ken/Qt/6.5.0/macos/lib -isystem /Users/ken/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/ken/Qt/6.5.0/macos/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/RogueLike-Qt.dir
   OBJECT_FILE_DIR = CMakeFiles/RogueLike-Qt.dir
@@ -68,7 +68,7 @@ build CMakeFiles/RogueLike-Qt.dir/main.cpp.o: CXX_COMPILER__RogueLike-Qt_unscann
 build CMakeFiles/RogueLike-Qt.dir/mainwindow.cpp.o: CXX_COMPILER__RogueLike-Qt_unscanned_Debug /Users/ken/Codes/RogueLike/RogueLike-Qt/mainwindow.cpp || cmake_object_order_depends_target_RogueLike-Qt
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/RogueLike-Qt.dir/mainwindow.cpp.o.d
-  FLAGS = -fsanitize=thread -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -fsanitize=address -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
   INCLUDES = -I/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/include -I/Users/ken/Codes/RogueLike/RogueLike-Qt/json/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers -iframework /Users/ken/Qt/6.5.0/macos/lib -isystem /Users/ken/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/ken/Qt/6.5.0/macos/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/RogueLike-Qt.dir
   OBJECT_FILE_DIR = CMakeFiles/RogueLike-Qt.dir
@@ -76,7 +76,7 @@ build CMakeFiles/RogueLike-Qt.dir/mainwindow.cpp.o: CXX_COMPILER__RogueLike-Qt_u
 build CMakeFiles/RogueLike-Qt.dir/GameScene/Player.cpp.o: CXX_COMPILER__RogueLike-Qt_unscanned_Debug /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Player.cpp || cmake_object_order_depends_target_RogueLike-Qt
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/RogueLike-Qt.dir/GameScene/Player.cpp.o.d
-  FLAGS = -fsanitize=thread -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -fsanitize=address -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
   INCLUDES = -I/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/include -I/Users/ken/Codes/RogueLike/RogueLike-Qt/json/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers -iframework /Users/ken/Qt/6.5.0/macos/lib -isystem /Users/ken/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/ken/Qt/6.5.0/macos/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/RogueLike-Qt.dir
   OBJECT_FILE_DIR = CMakeFiles/RogueLike-Qt.dir/GameScene
@@ -84,7 +84,7 @@ build CMakeFiles/RogueLike-Qt.dir/GameScene/Player.cpp.o: CXX_COMPILER__RogueLik
 build CMakeFiles/RogueLike-Qt.dir/GameScene/GameScene.cpp.o: CXX_COMPILER__RogueLike-Qt_unscanned_Debug /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/GameScene.cpp || cmake_object_order_depends_target_RogueLike-Qt
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/RogueLike-Qt.dir/GameScene/GameScene.cpp.o.d
-  FLAGS = -fsanitize=thread -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -fsanitize=address -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
   INCLUDES = -I/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/include -I/Users/ken/Codes/RogueLike/RogueLike-Qt/json/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers -iframework /Users/ken/Qt/6.5.0/macos/lib -isystem /Users/ken/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/ken/Qt/6.5.0/macos/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/RogueLike-Qt.dir
   OBJECT_FILE_DIR = CMakeFiles/RogueLike-Qt.dir/GameScene
@@ -92,7 +92,7 @@ build CMakeFiles/RogueLike-Qt.dir/GameScene/GameScene.cpp.o: CXX_COMPILER__Rogue
 build CMakeFiles/RogueLike-Qt.dir/GameScene/Map.cpp.o: CXX_COMPILER__RogueLike-Qt_unscanned_Debug /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Map.cpp || cmake_object_order_depends_target_RogueLike-Qt
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/RogueLike-Qt.dir/GameScene/Map.cpp.o.d
-  FLAGS = -fsanitize=thread -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -fsanitize=address -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
   INCLUDES = -I/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/include -I/Users/ken/Codes/RogueLike/RogueLike-Qt/json/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers -iframework /Users/ken/Qt/6.5.0/macos/lib -isystem /Users/ken/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/ken/Qt/6.5.0/macos/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/RogueLike-Qt.dir
   OBJECT_FILE_DIR = CMakeFiles/RogueLike-Qt.dir/GameScene
@@ -100,7 +100,7 @@ build CMakeFiles/RogueLike-Qt.dir/GameScene/Map.cpp.o: CXX_COMPILER__RogueLike-Q
 build CMakeFiles/RogueLike-Qt.dir/GameScene/Enemy.cpp.o: CXX_COMPILER__RogueLike-Qt_unscanned_Debug /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Enemy.cpp || cmake_object_order_depends_target_RogueLike-Qt
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/RogueLike-Qt.dir/GameScene/Enemy.cpp.o.d
-  FLAGS = -fsanitize=thread -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -fsanitize=address -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
   INCLUDES = -I/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/include -I/Users/ken/Codes/RogueLike/RogueLike-Qt/json/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers -iframework /Users/ken/Qt/6.5.0/macos/lib -isystem /Users/ken/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/ken/Qt/6.5.0/macos/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/RogueLike-Qt.dir
   OBJECT_FILE_DIR = CMakeFiles/RogueLike-Qt.dir/GameScene
@@ -108,7 +108,7 @@ build CMakeFiles/RogueLike-Qt.dir/GameScene/Enemy.cpp.o: CXX_COMPILER__RogueLike
 build CMakeFiles/RogueLike-Qt.dir/GameScene/Base.cpp.o: CXX_COMPILER__RogueLike-Qt_unscanned_Debug /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Base.cpp || cmake_object_order_depends_target_RogueLike-Qt
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/RogueLike-Qt.dir/GameScene/Base.cpp.o.d
-  FLAGS = -fsanitize=thread -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -fsanitize=address -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
   INCLUDES = -I/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/include -I/Users/ken/Codes/RogueLike/RogueLike-Qt/json/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers -iframework /Users/ken/Qt/6.5.0/macos/lib -isystem /Users/ken/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/ken/Qt/6.5.0/macos/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/RogueLike-Qt.dir
   OBJECT_FILE_DIR = CMakeFiles/RogueLike-Qt.dir/GameScene
@@ -116,7 +116,7 @@ build CMakeFiles/RogueLike-Qt.dir/GameScene/Base.cpp.o: CXX_COMPILER__RogueLike-
 build CMakeFiles/RogueLike-Qt.dir/GameScene/Weapon.cpp.o: CXX_COMPILER__RogueLike-Qt_unscanned_Debug /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Weapon.cpp || cmake_object_order_depends_target_RogueLike-Qt
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/RogueLike-Qt.dir/GameScene/Weapon.cpp.o.d
-  FLAGS = -fsanitize=thread -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -fsanitize=address -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
   INCLUDES = -I/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/include -I/Users/ken/Codes/RogueLike/RogueLike-Qt/json/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers -iframework /Users/ken/Qt/6.5.0/macos/lib -isystem /Users/ken/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/ken/Qt/6.5.0/macos/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/RogueLike-Qt.dir
   OBJECT_FILE_DIR = CMakeFiles/RogueLike-Qt.dir/GameScene
@@ -124,7 +124,7 @@ build CMakeFiles/RogueLike-Qt.dir/GameScene/Weapon.cpp.o: CXX_COMPILER__RogueLik
 build CMakeFiles/RogueLike-Qt.dir/GameScene/EnhanceOpt/EnhanceOption.cpp.o: CXX_COMPILER__RogueLike-Qt_unscanned_Debug /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/EnhanceOpt/EnhanceOption.cpp || cmake_object_order_depends_target_RogueLike-Qt
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/RogueLike-Qt.dir/GameScene/EnhanceOpt/EnhanceOption.cpp.o.d
-  FLAGS = -fsanitize=thread -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -fsanitize=address -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
   INCLUDES = -I/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/include -I/Users/ken/Codes/RogueLike/RogueLike-Qt/json/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers -iframework /Users/ken/Qt/6.5.0/macos/lib -isystem /Users/ken/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/ken/Qt/6.5.0/macos/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/RogueLike-Qt.dir
   OBJECT_FILE_DIR = CMakeFiles/RogueLike-Qt.dir/GameScene/EnhanceOpt
@@ -132,7 +132,7 @@ build CMakeFiles/RogueLike-Qt.dir/GameScene/EnhanceOpt/EnhanceOption.cpp.o: CXX_
 build CMakeFiles/RogueLike-Qt.dir/GameScene/EnhanceOpt/EnhancePanel.cpp.o: CXX_COMPILER__RogueLike-Qt_unscanned_Debug /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/EnhanceOpt/EnhancePanel.cpp || cmake_object_order_depends_target_RogueLike-Qt
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/RogueLike-Qt.dir/GameScene/EnhanceOpt/EnhancePanel.cpp.o.d
-  FLAGS = -fsanitize=thread -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -fsanitize=address -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
   INCLUDES = -I/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/include -I/Users/ken/Codes/RogueLike/RogueLike-Qt/json/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers -iframework /Users/ken/Qt/6.5.0/macos/lib -isystem /Users/ken/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/ken/Qt/6.5.0/macos/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers
   OBJECT_DIR = CMakeFiles/RogueLike-Qt.dir
   OBJECT_FILE_DIR = CMakeFiles/RogueLike-Qt.dir/GameScene/EnhanceOpt
@@ -146,7 +146,7 @@ build CMakeFiles/RogueLike-Qt.dir/GameScene/EnhanceOpt/EnhancePanel.cpp.o: CXX_C
 # Link the executable RogueLike-Qt.app/Contents/MacOS/RogueLike-Qt
 
 build RogueLike-Qt.app/Contents/MacOS/RogueLike-Qt: CXX_EXECUTABLE_LINKER__RogueLike-Qt_Debug CMakeFiles/RogueLike-Qt.dir/RogueLike-Qt_autogen/mocs_compilation.cpp.o CMakeFiles/RogueLike-Qt.dir/main.cpp.o CMakeFiles/RogueLike-Qt.dir/mainwindow.cpp.o CMakeFiles/RogueLike-Qt.dir/GameScene/Player.cpp.o CMakeFiles/RogueLike-Qt.dir/GameScene/GameScene.cpp.o CMakeFiles/RogueLike-Qt.dir/GameScene/Map.cpp.o CMakeFiles/RogueLike-Qt.dir/GameScene/Enemy.cpp.o CMakeFiles/RogueLike-Qt.dir/GameScene/Base.cpp.o CMakeFiles/RogueLike-Qt.dir/GameScene/Weapon.cpp.o CMakeFiles/RogueLike-Qt.dir/GameScene/EnhanceOpt/EnhanceOption.cpp.o CMakeFiles/RogueLike-Qt.dir/GameScene/EnhanceOpt/EnhancePanel.cpp.o | /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/QtGui /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/QtCore || RogueLike-Qt_autogen RogueLike-Qt_autogen_timestamp_deps
-  FLAGS = -fsanitize=thread -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+  FLAGS = -fsanitize=address -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
   LINK_LIBRARIES = -Wl,-rpath,/Users/ken/Qt/6.5.0/macos/lib  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/QtGui  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/QtCore  -framework IOKit  -framework DiskArbitration  -Xlinker -framework -Xlinker OpenGL  -Xlinker -framework -Xlinker AGL  -framework AppKit  -framework ImageIO  -framework Metal
   LINK_PATH = -F/Users/ken/Qt/6.5.0/macos/lib
   OBJECT_DIR = CMakeFiles/RogueLike-Qt.dir
@@ -160,7 +160,7 @@ build RogueLike-Qt.app/Contents/MacOS/RogueLike-Qt: CXX_EXECUTABLE_LINKER__Rogue
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/ken/Codes/RogueLike/RogueLike-Qt/build && /opt/homebrew/Cellar/cmake/3.25.3/bin/ccmake -S/Users/ken/Codes/RogueLike/RogueLike-Qt -B/Users/ken/Codes/RogueLike/RogueLike-Qt/build
+  COMMAND = cd /Users/ken/Codes/RogueLike/RogueLike-Qt/build && /opt/homebrew/Cellar/cmake/3.26.3/bin/ccmake -S/Users/ken/Codes/RogueLike/RogueLike-Qt -B/Users/ken/Codes/RogueLike/RogueLike-Qt/build
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -247,7 +247,7 @@ build RogueLike-Qt_autogen/timestamp RogueLike-Qt_autogen/mocs_compilation.cpp |
 #############################################
 # Phony custom command for CMakeFiles/RogueLike-Qt_autogen_timestamp_deps
 
-build CMakeFiles/RogueLike-Qt_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/RogueLike-Qt_autogen_timestamp_deps: phony /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/ken/Qt/6.5.0/macos/./libexec/moc /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/QtCore /Users/ken/Qt/6.5.0/macos/./libexec/uic
+build CMakeFiles/RogueLike-Qt_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/RogueLike-Qt_autogen_timestamp_deps: phony /Users/ken/Qt/6.5.0/macos/./libexec/moc /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/QtCore /Users/ken/Qt/6.5.0/macos/./libexec/uic /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets
 
 
 #############################################
@@ -265,7 +265,7 @@ build CMakeFiles/RogueLike-Qt_autogen RogueLike-Qt_autogen/include/ui_mainwindow
 # Utility command for edit_cache
 
 build json/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/ken/Codes/RogueLike/RogueLike-Qt/build/json && /opt/homebrew/Cellar/cmake/3.25.3/bin/ccmake -S/Users/ken/Codes/RogueLike/RogueLike-Qt -B/Users/ken/Codes/RogueLike/RogueLike-Qt/build
+  COMMAND = cd /Users/ken/Codes/RogueLike/RogueLike-Qt/build/json && /opt/homebrew/Cellar/cmake/3.26.3/bin/ccmake -S/Users/ken/Codes/RogueLike/RogueLike-Qt -B/Users/ken/Codes/RogueLike/RogueLike-Qt/build
   DESC = Running CMake cache editor...
   pool = console
   restat = 1

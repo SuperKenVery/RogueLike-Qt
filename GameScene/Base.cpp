@@ -28,7 +28,23 @@ QRectF Base::boundingRect() const{
 }
 
 void Base::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget){
+    for(auto a:this->animations) a->paintHook(painter, option, widget);
     painter->drawImage(this->boundingRect(),this->image);
+}
+
+void Base::advance(int step){
+    if(step==0) return;
+
+    auto animations_copy=this->animations;
+    for(auto a:animations_copy){
+        auto finished=a->tick(step);
+        if(finished)
+            for(auto t=this->animations.begin();t!=this->animations.end();t++)
+                if(*t==a){
+                    this->animations.erase(t);
+                    break;
+                }
+    }
 }
 
 bool Base::valid(){

@@ -1,4 +1,5 @@
 #include "Player.h"
+#include "Base.h"
 #include "GameScene.h"
 #include "EnhanceOpt/EnhancePanel.h"
 #include <QPainter>
@@ -89,6 +90,8 @@ void Player::keyReleaseEvent(QKeyEvent *event){
 }
 
 void Player::advance(int step){
+    Base::advance(step);
+
     // Basic check
     if(step==0) return;
 
