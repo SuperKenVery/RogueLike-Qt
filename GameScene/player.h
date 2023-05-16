@@ -10,6 +10,7 @@
 #include <nlohmann/json.hpp>
 #include <vector>
 #include "Base.h"
+#include "EnhanceOpt/EnhancePanel.h"
 #include "GameScene.h"
 #include "Weapon.h"
 using json=nlohmann::json;
@@ -30,9 +31,13 @@ protected:
     void keyReleaseEvent(QKeyEvent *event) override;
 
 private:
+    void enhance();
+    EnhancePanel *enhance_panel;
     Weapon *weapon;
     QVector2D direction=QVector2D(0,0);
     uint speed;
+    vector<uint> enhance_hp;
+    vector<uint>::iterator next_enhance_hp;
 };
 
 #endif // PLAYER_H

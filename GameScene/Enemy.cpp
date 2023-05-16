@@ -8,7 +8,7 @@
 #include <random>
 #include "GameScene.h"
 #include "Weapon.h"
-#include "player.h"
+#include "Player.h"
 
 
 
@@ -76,7 +76,6 @@ Base(config["life"],config["size"],QImage(QString::fromStdString(config["image"]
     default:
         throw "Invalid edge";
     }
-    printf("Putting an enemy at (%f,%f)\n",this->pos().x(),this->pos().y());
 }
 
 

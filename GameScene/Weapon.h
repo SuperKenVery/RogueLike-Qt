@@ -3,6 +3,7 @@
 
 #include <QGraphicsView>
 #include <QGraphicsItem>
+#include <QtGui/qpainterpath.h>
 #include <QtWidgets/qgraphicsitem.h>
 #include <QtWidgets/qgraphicsscene.h>
 #include <nlohmann/json.hpp>
@@ -20,8 +21,10 @@ public:
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
     void advance(int step) override;
     void setAttackables(vector<Base*> *attackables);
-private:
+    uint hp=0;
     uint attack,range;
+    bool debug=false;
+private:
     vector<Base*> *attackables;
 };
 

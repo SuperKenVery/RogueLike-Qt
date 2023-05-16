@@ -690,17 +690,23 @@ RogueLike-Qt_autogen/timestamp: \
 	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale.h \
 	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_time.h \
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include/stdarg.h \
-	/Users/ken/Codes/RogueLike/RogueLike-Qt/Base.cpp \
-	/Users/ken/Codes/RogueLike/RogueLike-Qt/Base.h \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/CMakeLists.txt \
-	/Users/ken/Codes/RogueLike/RogueLike-Qt/Enemy.cpp \
-	/Users/ken/Codes/RogueLike/RogueLike-Qt/Enemy.h \
-	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene.cpp \
-	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene.h \
-	/Users/ken/Codes/RogueLike/RogueLike-Qt/Map.cpp \
-	/Users/ken/Codes/RogueLike/RogueLike-Qt/Map.h \
-	/Users/ken/Codes/RogueLike/RogueLike-Qt/Weapon.cpp \
-	/Users/ken/Codes/RogueLike/RogueLike-Qt/Weapon.h \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Base.cpp \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Base.h \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Enemy.cpp \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Enemy.h \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/EnhanceOpt/EnhanceOption.cpp \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/EnhanceOpt/EnhanceOption.h \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/EnhanceOpt/EnhancePanel.cpp \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/EnhanceOpt/EnhancePanel.h \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/GameScene.cpp \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/GameScene.h \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Map.cpp \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Map.h \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Player.cpp \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Player.h \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Weapon.cpp \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Weapon.h \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/build/CMakeFiles/3.26.3/CMakeCXXCompiler.cmake \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/build/CMakeFiles/3.26.3/CMakeSystem.cmake \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/moc_predefs.h \
@@ -752,8 +758,12 @@ RogueLike-Qt_autogen/timestamp: \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/main.cpp \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/mainwindow.cpp \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/mainwindow.h \
-	/Users/ken/Codes/RogueLike/RogueLike-Qt/player.cpp \
-	/Users/ken/Codes/RogueLike/RogueLike-Qt/player.h \
+	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/QList \
+	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/QObject \
+	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/QRect \
+	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/QSize \
+	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/QSizeF \
+	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/QString \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/QTimer \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/q20memory.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/q20type_traits.h \
@@ -782,6 +792,7 @@ RogueLike-Qt_autogen/timestamp: \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qcontainerinfo.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qcontainertools_impl.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qcontiguouscache.h \
+	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qcoreevent.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qdarwinhelpers.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qdatastream.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qdebug.h \
@@ -795,6 +806,7 @@ RogueLike-Qt_autogen/timestamp: \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qglobalstatic.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qhash.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qhashfunctions.h \
+	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qiodevice.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qiodevicebase.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qiterable.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qiterator.h \
@@ -809,6 +821,7 @@ RogueLike-Qt_autogen/timestamp: \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qmetatype.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qminmax.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qnamespace.h \
+	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qnativeinterface.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qnumeric.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qobject.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qobject_impl.h \
@@ -817,6 +830,7 @@ RogueLike-Qt_autogen/timestamp: \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qoverload.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qpair.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qpoint.h \
+	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qpointer.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qprocessordetection.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qrect.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qrefcount.h \
@@ -859,45 +873,59 @@ RogueLike-Qt_autogen/timestamp: \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qtversionchecks.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qtypeinfo.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qtypes.h \
+	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qurl.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qutf8stringview.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qvariant.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qvarlengtharray.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qxptype_traits.h \
+	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/QTransform \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qaction.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qbitmap.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qbrush.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qcolor.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qcursor.h \
+	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qevent.h \
+	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qeventpoint.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qfont.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qfontinfo.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qfontmetrics.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qicon.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qimage.h \
+	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qinputdevice.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qkeysequence.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpaintdevice.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpainter.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpalette.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpen.h \
+	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpicture.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpixelformat.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpixmap.h \
+	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpointingdevice.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpolygon.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qregion.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qrgb.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qrgba64.h \
+	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qscreen.h \
+	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qtextdocument.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qtextoption.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qtgui-config.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qtguiexports.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qtguiglobal.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qtransform.h \
+	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qvector2d.h \
+	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qvectornd.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsScene \
 	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsView \
+	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QLabel \
 	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
+	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QWidget \
 	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractscrollarea.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsscene.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsview.h \
+	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qlabel.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qscrollarea.h \
 	/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h \

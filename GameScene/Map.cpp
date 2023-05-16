@@ -85,5 +85,5 @@ QPointF Map::getFreePos(){
         for(auto i: line)
             if(i->type==ground)
                 return i->position.center();
-
+    throw "No free position!";
 }

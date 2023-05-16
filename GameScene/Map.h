@@ -2,7 +2,7 @@
 #define Map_h
 
 // #include "GameScene.h"
-#include "player.h"
+#include "Player.h"
 #include <QGraphicsView>
 #include <QGraphicsScene>
 #include <QGraphicsItem>

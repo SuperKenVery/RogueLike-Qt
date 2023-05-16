@@ -19,6 +19,7 @@
             "life":100,
             "speed":10,
             "size":50,
+            "enhance_hp": [1,100, 200, 300, 400, 500],
             "weapon":{
                 "attack":5,
                 "range":250
@@ -29,6 +30,7 @@
             "life":120,
             "speed":5,
             "size":50,
+            "enhance_hp": [100, 200, 300, 400, 500],
             "weapon":{
                 "attack":5,
                 "range":250

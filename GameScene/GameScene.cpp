@@ -1,8 +1,11 @@
 #include "GameScene.h"
 #include "Enemy.h"
+#include "Player.h"
+#include "EnhanceOpt/EnhancePanel.h"
 #include "Map.h"
 #include <QImage>
 #include <QtCore/qlogging.h>
+#include <QtCore/qrect.h>
 #include <QtCore/qtimer.h>
 #include <QtGui/qevent.h>
 #include <QtGui/qimage.h>
@@ -45,6 +48,44 @@ createEnemyTimer(this){
     /* Create an enemy now */
     this->newEnemy();
 
+
+}
+
+void GameScene::debug_panel(){
+    // Only for test, don't actually do the enhancement but print them
+    auto panel=new EnhancePanel({
+        {
+            "Speed 1.5x",
+            [&](){
+                printf("Speed 1.5x\n");
+            }
+        },
+        {
+            "Weapon Range 2x",
+            [&](){
+                printf("Weapon Range 2x\n");
+            }
+        },
+        {
+            "Weapon Attack 2x",
+            [&](){
+                printf("Weapon Attack 2x\n");
+            }
+        },
+        {
+            "Speed 2x",
+            [&](){
+                printf("Speed 2x\n");
+            }
+        },
+        {
+            "Weapon Attack 3x",
+            [&](){
+                printf("Weapon Attack 3x\n");
+            }
+        }
+    },this->views()[0]);
+    panel->show();
 }
 
 void GameScene::newEnemy(){

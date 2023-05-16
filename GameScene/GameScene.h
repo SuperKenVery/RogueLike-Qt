@@ -1,6 +1,7 @@
 #ifndef GameScene_h
 #define GameScene_h
 
+#include <QtCore/qrect.h>
 #include <vector>
 #include <QGraphicsView>
 #include <QGraphicsScene>
@@ -29,6 +30,7 @@ public:
     Player *player;
     vector<Base*> enemies,players;
     QTimer createEnemyTimer;
+    void debug_panel();
 public slots:
     void newEnemy();
 private:

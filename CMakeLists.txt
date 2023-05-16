@@ -21,20 +21,24 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
-        player.h
-        player.cpp
-        GameScene.h
-        GameScene.cpp
-        Map.cpp
-        Map.h
-        Enemy.h
-        Enemy.cpp
-        Weapon.h
-        Weapon.h
-        Base.h
-        Base.cpp
-        Weapon.h
-        Weapon.cpp
+        GameScene/Player.h
+        GameScene/Player.cpp
+        GameScene/GameScene.h
+        GameScene/GameScene.cpp
+        GameScene/Map.cpp
+        GameScene/Map.h
+        GameScene/Enemy.h
+        GameScene/Enemy.cpp
+        GameScene/Weapon.h
+        GameScene/Weapon.h
+        GameScene/Base.h
+        GameScene/Base.cpp
+        GameScene/Weapon.h
+        GameScene/Weapon.cpp
+        GameScene/EnhanceOpt/EnhanceOption.cpp
+        GameScene/EnhanceOpt/EnhanceOption.h
+        GameScene/EnhanceOpt/EnhancePanel.cpp
+        GameScene/EnhanceOpt/EnhancePanel.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

@@ -17,7 +17,8 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
+public slots:
+    void debug();
 private:
     Ui::MainWindow *ui;
     QGraphicsView *graphicsView;

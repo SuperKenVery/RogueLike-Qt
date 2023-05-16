@@ -1,5 +1,6 @@
-#include "player.h"
+#include "Player.h"
 #include "GameScene.h"
+#include "EnhanceOpt/EnhancePanel.h"
 #include <QPainter>
 #include<QKeyEvent>
 #include <QtCore/qrect.h>
@@ -10,6 +11,7 @@
 #include <QtWidgets/qwidget.h>
 #include <cstdio>
 #include <QGraphicsWidget>
+#include <random>
 
 /*
 Construct a player
@@ -20,9 +22,10 @@ Config Example:
     "life":120,
     "speed":5,
     "size":50,
+    "upgrade_hp": [100, 200, 300, 400, 500],
     "weapon":{
         "attack":5,
-        "distance":250
+        "range":250
     }
 }
 */
@@ -31,12 +34,15 @@ Config Example:
 Player::Player(json config,attackable_list *attackables,GameScene *scene):
 Base(config["life"],config["size"],QImage(QString::fromStdString(config["image"]))){
     this->speed=config["speed"];
+    this->enhance_hp=vector<uint>(config["enhance_hp"]);
+    this->next_enhance_hp=this->enhance_hp.begin();
 
     this->weapon=new Weapon(
         config["weapon"],
         attackables,
         this
     );
+    this->weapon->debug=true;
 
     this->setFlags(QGraphicsItem::ItemIsSelectable|QGraphicsItem::ItemIsFocusable);
 
@@ -83,10 +89,12 @@ void Player::keyReleaseEvent(QKeyEvent *event){
 }
 
 void Player::advance(int step){
+    printf("Player advance\n");
     // Basic check
     if(this->direction.length()==0) return;
     if(step==0) return;
 
+    // Move
     for(int i=0;i<this->speed;i++){
         // Advance
         auto oldPos=this->pos();
@@ -98,6 +106,64 @@ void Player::advance(int step){
         }
     }
 
+    // Enhance
+    if(this->weapon->hp>=*this->next_enhance_hp){
+        printf("HP is %d, enhancing...\n",this->weapon->hp);
+        this->weapon->hp-=*this->next_enhance_hp;
+        (*this->next_enhance_hp)++;
+        if(this->next_enhance_hp==this->enhance_hp.end()){
+            this->next_enhance_hp--;
+        }
+        this->enhance();
+    }else{
+        // printf("HP is %d, not enough to enhance\n",this->weapon->hp);
+    }
+
+
+}
+
+void Player::enhance(){
+    static vector<pair<QString,enhance_action>> enhance_options={
+        {
+            "Speed 1.5x",
+            [&](){
+                this->speed*=1.5;
+            }
+        },
+        {
+            "Weapon Range 2x",
+            [&](){
+                this->weapon->range*=2;
+            }
+        },
+        {
+            "Weapon Attack 2x",
+            [&](){
+                this->weapon->attack*=2;
+            }
+        },
+        {
+            "Speed 2x",
+            [&](){
+                this->speed*=2;
+            }
+        },
+        {
+            "Weapon Attack 3x",
+            [&](){
+                this->weapon->attack*=3;
+            }
+        }
+    };
+
+    shuffle(enhance_options.begin(),enhance_options.end(),default_random_engine(time(NULL)));
+
+    this->enhance_panel=new EnhancePanel(
+        {enhance_options[0],enhance_options[1],enhance_options[2]},
+        this->scene()->views()[0]
+    );
+    this->enhance_panel->show();
+    // this->scene()->views()[0]->parentWidget()
 }
 
 void Player::die(){
