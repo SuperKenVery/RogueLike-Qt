@@ -2,12 +2,15 @@
 #define Base_h
 
 #include "Animations/Animation.h"
+#include "GameScene.h"
 #include <QGraphicsItem>
 #include <QtCore/qrect.h>
 #include <QtGui/qimage.h>
 #include <QtWidgets/qgraphicsitem.h>
 #include <vector>
+#include <nlohmann/json.hpp>
 using namespace std;
+using json=nlohmann::json;
 
 class Base: public QGraphicsItem{
 public:
@@ -17,6 +20,7 @@ public:
     bool valid();
     virtual void die()=0;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override final;
+    virtual json dumpState()=0;
     QRectF boundingRect() const override final;
     void advance(int step) override;
     vector<Animation*> animations;

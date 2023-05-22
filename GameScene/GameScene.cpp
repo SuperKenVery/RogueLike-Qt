@@ -1,7 +1,6 @@
 #include "GameScene.h"
 #include "Enemy.h"
 #include "Player.h"
-#include "EnhanceOpt/EnhancePanel.h"
 #include "Map.h"
 #include <QImage>
 #include <QtCore/qlogging.h>
@@ -22,7 +21,7 @@ using namespace std;
 
 GameScene::GameScene(QWidget *parent):
 QGraphicsScene(parent),
-createEnemyTimer(this){
+enemyCreationTimer(this){
     // Record time to calculate live time
     this->startTime=time(nullptr);
 
@@ -48,8 +47,8 @@ createEnemyTimer(this){
     this->players=vector<Base*>({this->player});
 
     // Create enemy timer
-    connect(&this->createEnemyTimer,&QTimer::timeout,this,&GameScene::newEnemy);
-    this->createEnemyTimer.start(5000);
+    connect(&this->enemyCreationTimer,&QTimer::timeout,this,&GameScene::newEnemy);
+    this->enemyCreationTimer.start(5000);
 
     /* Create an enemy now */
     this->newEnemy();
@@ -73,7 +72,17 @@ void GameScene::newEnemy(){
 }
 
 json GameScene::dumpState(){
-
+    json::array_t enemy_states;
+    for(auto enemy: this->enemies){
+        enemy_states.push_back(enemy->dumpState());
+    }
+    return json(
+        {
+            {"liveTime",time(nullptr)-this->startTime},
+            {"player",this->player->dumpState()},
+            {"enemies",enemy_states}
+        }
+    );
 }
 
 GameScene::~GameScene(){

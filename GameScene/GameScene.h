@@ -31,7 +31,7 @@ public:
     Map *map;
     Player *player;
     vector<Base*> enemies,players;
-    QTimer createEnemyTimer;
+    QTimer enemyCreationTimer;
     void debug_panel();
 public slots:
     void newEnemy();
