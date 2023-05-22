@@ -9,8 +9,6 @@ typedef unsigned int uint;
 
 class Animation {
 public:
-    Animation();
-    ~Animation();
     /* Run the animation
      * Must be overridden by subclass
      *

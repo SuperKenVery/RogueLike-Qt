@@ -9,7 +9,9 @@
 #include <QtCore/qtimer.h>
 #include <QtGui/qevent.h>
 #include <QtGui/qimage.h>
+#include <QtGui/qpalette.h>
 #include <QtWidgets/qgraphicsscene.h>
+#include <QtWidgets/qlabel.h>
 #include <QtWidgets/qwidget.h>
 #include <cstddef>
 #include <fstream>
@@ -41,53 +43,22 @@ createEnemyTimer(this){
     this->player->focusItem();
     this->addItem(this->player);
     this->players=vector<Base*>({this->player});
-
+#if 0
     // Create enemy timer
     connect(&this->createEnemyTimer,&QTimer::timeout,this,&GameScene::newEnemy);
     this->createEnemyTimer.start(5000);
     /* Create an enemy now */
     this->newEnemy();
+#endif
 
 
 }
 
 void GameScene::debug_panel(){
-    // Only for test, don't actually do the enhancement but print them
-    auto panel=new EnhancePanel({
-        {
-            "Speed 1.5x",
-            [&](){
-                printf("Speed 1.5x\n");
-            }
-        },
-        {
-            "Weapon Range 2x",
-            [&](){
-                printf("Weapon Range 2x\n");
-            }
-        },
-        {
-            "Weapon Attack 2x",
-            [&](){
-                printf("Weapon Attack 2x\n");
-            }
-        },
-        {
-            "Speed 2x",
-            [&](){
-                printf("Speed 2x\n");
-            }
-        },
-        {
-            "Weapon Attack 3x",
-            [&](){
-                printf("Weapon Attack 3x\n");
-            }
-        }
-    },[](){
-        printf("Enhancement done\n");
-    },this->views()[0]);
-    panel->show();
+
+
+    this->player->setPos(0,0);
+    this->player->harm(10);
 }
 
 void GameScene::newEnemy(){

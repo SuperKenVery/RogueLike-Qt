@@ -25,6 +25,8 @@ MainWindow::MainWindow(QWidget *parent)
     connect(timer, &QTimer::timeout, this->scene, &QGraphicsScene::advance);
     timer->start(1000 / 60);
 
+    ((GameScene*)this->scene)->debug_panel();
+
     // auto t=new QTimer;
     // connect(timer, &QTimer::timeout, this, &MainWindow::debug);
     // timer->start(1000);

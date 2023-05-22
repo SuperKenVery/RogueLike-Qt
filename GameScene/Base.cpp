@@ -1,4 +1,5 @@
 #include "Base.h"
+#include "Animations/HarmAnimation.h"
 #include "GameScene.h"
 #include "Map.h"
 #include <QtCore/qrect.h>
@@ -12,15 +13,19 @@ size(size){
 }
 
 uint Base::harm(uint damage){
+    auto real_damage=0;
     if(damage>this->life){
-        auto ret=this->life;
+        real_damage=this->life;
         this->life=0;
         this->die();
-        return ret;
     }else{
         this->life-=damage;
-        return damage;
+        real_damage=damage;
     }
+    this->animations.push_back(new HarmAnimation(
+        this,real_damage
+    ));
+    return real_damage;
 }
 
 QRectF Base::boundingRect() const{
@@ -41,6 +46,7 @@ void Base::advance(int step){
         if(finished)
             for(auto t=this->animations.begin();t!=this->animations.end();t++)
                 if(*t==a){
+                    printf("An animation has finished\n");
                     this->animations.erase(t);
                     break;
                 }

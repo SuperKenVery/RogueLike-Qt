@@ -45,7 +45,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 45,
+				"line" : 48,
 				"parent" : 0
 			},
 			{
@@ -69,13 +69,13 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 78,
+				"line" : 81,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 68,
+				"line" : 71,
 				"parent" : 0
 			},
 			{
@@ -300,18 +300,19 @@
 				15,
 				16,
 				17,
-				19
+				19,
+				22
 			]
 		}
 	],
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "RogueLike-Qt_autogen::@6890427a1f51a3e7e1df"
+			"id" : "RogueLike-Qt_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "RogueLike-Qt_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "RogueLike-Qt_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "RogueLike-Qt::@6890427a1f51a3e7e1df",
@@ -423,7 +424,8 @@
 				15,
 				16,
 				17,
-				19
+				19,
+				22
 			]
 		},
 		{
@@ -439,7 +441,9 @@
 				14,
 				18,
 				20,
-				21
+				21,
+				23,
+				24
 			]
 		},
 		{
@@ -447,14 +451,14 @@
 			"sourceIndexes" : 
 			[
 				4,
-				22
+				25
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				23
+				26
 			]
 		}
 	],
@@ -575,6 +579,22 @@
 		{
 			"backtrace" : 4,
 			"path" : "GameScene/EnhanceOpt/EnhancePanel.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"path" : "GameScene/Animations/Animation.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 4,
+			"compileGroupIndex" : 0,
+			"path" : "GameScene/Animations/HarmAnimation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 4,
+			"path" : "GameScene/Animations/HarmAnimation.h",
 			"sourceGroupIndex" : 1
 		},
 		{

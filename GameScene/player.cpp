@@ -72,6 +72,7 @@ void Player::keyPressEvent(QKeyEvent *event){
     }
 }
 
+
 void Player::keyReleaseEvent(QKeyEvent *event){
     switch(event->key()){
     case Qt::Key_A:

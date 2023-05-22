@@ -11,7 +11,7 @@
 						1
 					],
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-77ecf1f79a3caeac6f5c.json",
+					"jsonFile" : "directory-.-Debug-3f52261a8a233be79661.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -71,7 +71,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "RogueLike-Qt::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-RogueLike-Qt-Debug-7f7e5e8ad9d7e9e41057.json",
+					"jsonFile" : "target-RogueLike-Qt-Debug-3003329b0af631e9b4ab.json",
 					"name" : "RogueLike-Qt",
 					"projectIndex" : 0
 				},

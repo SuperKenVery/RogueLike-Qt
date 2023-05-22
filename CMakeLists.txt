@@ -39,6 +39,9 @@ set(PROJECT_SOURCES
         GameScene/EnhanceOpt/EnhanceOption.h
         GameScene/EnhanceOpt/EnhancePanel.cpp
         GameScene/EnhanceOpt/EnhancePanel.h
+        GameScene/Animations/Animation.h
+        GameScene/Animations/HarmAnimation.cpp
+        GameScene/Animations/HarmAnimation.h
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

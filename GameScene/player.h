@@ -10,7 +10,6 @@
 #include <nlohmann/json.hpp>
 #include <vector>
 #include "Base.h"
-#include "EnhanceOpt/EnhancePanel.h"
 #include "GameScene.h"
 #include "Weapon.h"
 using json=nlohmann::json;
