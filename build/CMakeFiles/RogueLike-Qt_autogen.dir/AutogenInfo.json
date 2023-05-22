@@ -344,9 +344,15 @@
 			null
 		],
 		[
-			"/Users/ken/Codes/RogueLike/RogueLike-Qt/mainwindow.h",
+			"/Users/ken/Codes/RogueLike/RogueLike-Qt/Store/store.h",
 			"MU",
-			"EWIEGA46WW/moc_mainwindow.cpp",
+			"VRRY45DRA4/moc_store.cpp",
+			null
+		],
+		[
+			"/Users/ken/Codes/RogueLike/RogueLike-Qt/WelcomeWindow/welcomewindow.h",
+			"MU",
+			"TBDTWJZQVR/moc_welcomewindow.cpp",
 			null
 		]
 	],
@@ -453,8 +459,13 @@
 			"MU",
 			null
 		],
-		[ "/Users/ken/Codes/RogueLike/RogueLike-Qt/main.cpp", "MU", null ],
-		[ "/Users/ken/Codes/RogueLike/RogueLike-Qt/mainwindow.cpp", "MU", null ]
+		[ "/Users/ken/Codes/RogueLike/RogueLike-Qt/Store/store.cpp", "MU", null ],
+		[
+			"/Users/ken/Codes/RogueLike/RogueLike-Qt/WelcomeWindow/welcomewindow.cpp",
+			"MU",
+			null
+		],
+		[ "/Users/ken/Codes/RogueLike/RogueLike-Qt/main.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

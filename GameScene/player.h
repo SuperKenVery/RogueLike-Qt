@@ -23,6 +23,7 @@ public:
     ~Player();
     QImage image;
     void die() override;
+    json dumpState();
 
 protected:
     void advance(int step) override;

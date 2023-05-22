@@ -1,4 +1,5 @@
-RogueLike-Qt_autogen/timestamp: \
+/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/VRRY45DRA4/moc_store.cpp: /Users/ken/Codes/RogueLike/RogueLike-Qt/Store/store.h \
+  /Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/moc_predefs.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h \
@@ -707,34 +708,6 @@ RogueLike-Qt_autogen/timestamp: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/xlocale/_time.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/14.0.3/include/stdarg.h \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/CMakeLists.txt \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Animations/Animation.h \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Animations/HarmAnimation.cpp \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Animations/HarmAnimation.h \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Base.cpp \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Base.h \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Enemy.cpp \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Enemy.h \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/EnhanceOpt/EnhanceOption.cpp \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/EnhanceOpt/EnhanceOption.h \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/EnhanceOpt/EnhancePanel.cpp \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/EnhanceOpt/EnhancePanel.h \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/GameScene.cpp \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/GameScene.h \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Map.cpp \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Map.h \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Player.cpp \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Player.h \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Weapon.cpp \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Weapon.h \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/Store/store.cpp \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/Store/store.h \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/WelcomeWindow/WelcomeWindow.h \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/WelcomeWindow/welcomewindow.cpp \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/WelcomeWindow/welcomewindow.h \
-  CMakeFiles/3.26.3/CMakeCXXCompiler.cmake \
-  CMakeFiles/3.26.3/CMakeSystem.cmake \
-  RogueLike-Qt_autogen/moc_predefs.h \
   /Users/ken/Codes/RogueLike/RogueLike-Qt/json/include/nlohmann/adl_serializer.hpp \
   /Users/ken/Codes/RogueLike/RogueLike-Qt/json/include/nlohmann/byte_container_with_subtype.hpp \
   /Users/ken/Codes/RogueLike/RogueLike-Qt/json/include/nlohmann/detail/abi_macros.hpp \
@@ -780,14 +753,6 @@ RogueLike-Qt_autogen/timestamp: \
   /Users/ken/Codes/RogueLike/RogueLike-Qt/json/include/nlohmann/ordered_map.hpp \
   /Users/ken/Codes/RogueLike/RogueLike-Qt/json/include/nlohmann/thirdparty/hedley/hedley.hpp \
   /Users/ken/Codes/RogueLike/RogueLike-Qt/json/include/nlohmann/thirdparty/hedley/hedley_undef.hpp \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/main.cpp \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/QList \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/QObject \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/QRect \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/QSize \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/QSizeF \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/QString \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/QTimer \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/q20memory.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/q20type_traits.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qalgorithms.h \
@@ -799,7 +764,6 @@ RogueLike-Qt_autogen/timestamp: \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qatomic.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qatomic_cxx11.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qbasicatomic.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qbasictimer.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qbindingstorage.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qbytearray.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qbytearrayalgorithms.h \
@@ -815,7 +779,6 @@ RogueLike-Qt_autogen/timestamp: \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qcontainerinfo.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qcontainertools_impl.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qcontiguouscache.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qcoreevent.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qdarwinhelpers.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qdatastream.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qdebug.h \
@@ -829,7 +792,6 @@ RogueLike-Qt_autogen/timestamp: \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qglobalstatic.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qhash.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qhashfunctions.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qiodevice.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qiodevicebase.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qiterable.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qiterator.h \
@@ -844,7 +806,6 @@ RogueLike-Qt_autogen/timestamp: \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qmetatype.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qminmax.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qnamespace.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qnativeinterface.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qnumeric.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qobject.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qobject_impl.h \
@@ -853,7 +814,6 @@ RogueLike-Qt_autogen/timestamp: \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qoverload.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qpair.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qpoint.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qpointer.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qprocessordetection.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qrect.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qrefcount.h \
@@ -885,7 +845,6 @@ RogueLike-Qt_autogen/timestamp: \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qtdeprecationmarkers.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qtenvironmentvariables.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qtextstream.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qtimer.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qtmetamacros.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qtnoop.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qtpreprocessorsupport.h \
@@ -896,265 +855,39 @@ RogueLike-Qt_autogen/timestamp: \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qtversionchecks.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qtypeinfo.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qtypes.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qurl.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qutf8stringview.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qvariant.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qvarlengtharray.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qversiontagging.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/Headers/qxptype_traits.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/QTransform \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qaction.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qbitmap.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qbrush.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qcolor.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qcursor.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qevent.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qeventpoint.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qfont.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qfontinfo.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qfontmetrics.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qicon.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qimage.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qinputdevice.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qkeysequence.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpaintdevice.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpainter.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpalette.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpen.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpicture.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpixelformat.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpixmap.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpointingdevice.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qpolygon.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qregion.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qrgb.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qrgba64.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qscreen.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qtextdocument.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qtextoption.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qtgui-config.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qtguiexports.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qtguiglobal.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qtransform.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qvector2d.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qvectornd.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Versions/A/Headers/qwindowdefs.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QDialog \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsScene \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QGraphicsView \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QLabel \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QMainWindow \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/QWidget \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qabstractscrollarea.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qdialog.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qframe.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsscene.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qgraphicsview.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qlabel.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qmainwindow.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qscrollarea.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qsizepolicy.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtabwidget.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgets-config.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h \
   /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h \
-  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/FindWrapAtomic.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/FindWrapOpenGL.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/Qt6Config.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/Qt6ConfigExtras.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/Qt6ConfigVersion.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/Qt6Dependencies.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/Qt6Targets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/Qt6VersionlessTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/QtFeature.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/QtFeatureCommon.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/QtPublicAppleHelpers.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/QtPublicPluginHelpers.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/QtPublicTargetHelpers.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/QtPublicTestHelpers.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/QtPublicToolHelpers.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6CoreConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6CoreMacros.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6CorePlugins.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6CoreTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6CoreVersionlessTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginDependencies.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinBluetoothPermissionPluginTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginDependencies.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCalendarPermissionPluginTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginDependencies.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinCameraPermissionPluginTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginDependencies.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinContactsPermissionPluginTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginDependencies.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinLocationPermissionPluginTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginDependencies.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Core/QtInstallPaths.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6DBus/Qt6DBusAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6DBus/Qt6DBusConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6DBus/Qt6DBusDependencies.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6DBus/Qt6DBusMacros.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6DBus/Qt6DBusTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6DBus/Qt6DBusTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6DBus/Qt6DBusVersionlessTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersion.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsDependencies.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsVersionlessTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6GuiVersionlessTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QGifPluginTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake \
-  /Users/ken/Qt/6.5.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/CMakeCXXInformation.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/CMakeCommonLanguageInclude.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/CMakeFindDependencyMacro.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/CMakeGenericSystem.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/CMakeInitializeConfigs.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/CMakeLanguageInformation.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/CMakeSystemSpecificInformation.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/CheckCXXCompilerFlag.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/CheckCXXSourceCompiles.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/CheckIncludeFileCXX.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/CheckLibraryExists.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/Compiler/AppleClang-CXX.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/Compiler/Clang.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/Compiler/GNU.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/FindOpenGL.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/FindPackageHandleStandardArgs.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/FindPackageMessage.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/FindThreads.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/GNUInstallDirs.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/Internal/CheckCompilerFlag.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/Internal/CheckFlagCommonConfig.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/Internal/CheckSourceCompiles.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/MacroAddFileDependencies.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/Platform/Apple-Clang.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/Platform/Darwin-Initialize.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/Platform/Darwin.cmake \
-  /opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/Platform/UnixPaths.cmake \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/Store/store.ui \
-  /Users/ken/Codes/RogueLike/RogueLike-Qt/WelcomeWindow/welcomewindow.ui \
-  /opt/homebrew/Cellar/cmake/3.26.3/bin/cmake
+  /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h

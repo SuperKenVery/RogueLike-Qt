@@ -26,6 +26,7 @@ public:
     Enemy(json config,attackable_list *attackables,GameScene *scene);
     static unordered_map<string, move_strategy> move_strategies;
     void die() override;
+    json dumpState();
 protected:
     void advance(int step) override;
 private:
@@ -33,6 +34,7 @@ private:
     uint speed;
     move_strategy strategy;
     QVector2D direction;
+    string moveStrategyName;
 };
 
 #endif

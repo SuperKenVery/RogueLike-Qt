@@ -13,12 +13,6 @@
 },
 {
   "directory": "/Users/ken/Codes/RogueLike/RogueLike-Qt/build",
-  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/include -I/Users/ken/Codes/RogueLike/RogueLike-Qt/json/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers -iframework /Users/ken/Qt/6.5.0/macos/lib -isystem /Users/ken/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/ken/Qt/6.5.0/macos/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers   -fsanitize=address -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/RogueLike-Qt.dir/mainwindow.cpp.o -c /Users/ken/Codes/RogueLike/RogueLike-Qt/mainwindow.cpp",
-  "file": "/Users/ken/Codes/RogueLike/RogueLike-Qt/mainwindow.cpp",
-  "output": "CMakeFiles/RogueLike-Qt.dir/mainwindow.cpp.o"
-},
-{
-  "directory": "/Users/ken/Codes/RogueLike/RogueLike-Qt/build",
   "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/include -I/Users/ken/Codes/RogueLike/RogueLike-Qt/json/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers -iframework /Users/ken/Qt/6.5.0/macos/lib -isystem /Users/ken/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/ken/Qt/6.5.0/macos/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers   -fsanitize=address -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/RogueLike-Qt.dir/GameScene/Player.cpp.o -c /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Player.cpp",
   "file": "/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Player.cpp",
   "output": "CMakeFiles/RogueLike-Qt.dir/GameScene/Player.cpp.o"
@@ -70,5 +64,17 @@
   "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/include -I/Users/ken/Codes/RogueLike/RogueLike-Qt/json/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers -iframework /Users/ken/Qt/6.5.0/macos/lib -isystem /Users/ken/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/ken/Qt/6.5.0/macos/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers   -fsanitize=address -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/RogueLike-Qt.dir/GameScene/Animations/HarmAnimation.cpp.o -c /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Animations/HarmAnimation.cpp",
   "file": "/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Animations/HarmAnimation.cpp",
   "output": "CMakeFiles/RogueLike-Qt.dir/GameScene/Animations/HarmAnimation.cpp.o"
+},
+{
+  "directory": "/Users/ken/Codes/RogueLike/RogueLike-Qt/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/include -I/Users/ken/Codes/RogueLike/RogueLike-Qt/json/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers -iframework /Users/ken/Qt/6.5.0/macos/lib -isystem /Users/ken/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/ken/Qt/6.5.0/macos/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers   -fsanitize=address -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/RogueLike-Qt.dir/WelcomeWindow/welcomewindow.cpp.o -c /Users/ken/Codes/RogueLike/RogueLike-Qt/WelcomeWindow/welcomewindow.cpp",
+  "file": "/Users/ken/Codes/RogueLike/RogueLike-Qt/WelcomeWindow/welcomewindow.cpp",
+  "output": "CMakeFiles/RogueLike-Qt.dir/WelcomeWindow/welcomewindow.cpp.o"
+},
+{
+  "directory": "/Users/ken/Codes/RogueLike/RogueLike-Qt/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/include -I/Users/ken/Codes/RogueLike/RogueLike-Qt/json/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Headers -iframework /Users/ken/Qt/6.5.0/macos/lib -isystem /Users/ken/Qt/6.5.0/macos/mkspecs/macx-clang -isystem /Users/ken/Qt/6.5.0/macos/include -isystem /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/ken/Qt/6.5.0/macos/lib/QtGui.framework/Headers   -fsanitize=address -g -std=gnu++20 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/RogueLike-Qt.dir/Store/store.cpp.o -c /Users/ken/Codes/RogueLike/RogueLike-Qt/Store/store.cpp",
+  "file": "/Users/ken/Codes/RogueLike/RogueLike-Qt/Store/store.cpp",
+  "output": "CMakeFiles/RogueLike-Qt.dir/Store/store.cpp.o"
 }
 ]

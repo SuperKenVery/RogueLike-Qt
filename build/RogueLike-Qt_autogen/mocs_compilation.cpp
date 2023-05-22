@@ -2,4 +2,5 @@
 #include "IF2JWACTMR/moc_EnhanceOption.cpp"
 #include "IF2JWACTMR/moc_EnhancePanel.cpp"
 #include "QPTSQ33FLT/moc_GameScene.cpp"
-#include "EWIEGA46WW/moc_mainwindow.cpp"
+#include "VRRY45DRA4/moc_store.cpp"
+#include "TBDTWJZQVR/moc_welcomewindow.cpp"

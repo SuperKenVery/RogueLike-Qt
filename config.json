@@ -15,6 +15,7 @@
             "help":"An object in this list should be fed to the player's constructor"
         },
         {
+            "name":"Tim",
             "image":"images/player.png",
             "life":100,
             "speed":10,
@@ -26,6 +27,7 @@
             }
         },
         {
+            "name":"Bob",
             "image":"images/player.png",
             "life":120,
             "speed":5,

@@ -51,3 +51,13 @@ void Weapon::advance(int step){
 
 }
 
+json Weapon::dumpState(){
+    return json(
+        {
+            {"hp",this->hp},
+            {"attack",this->attack},
+            {"range",this->range}
+        }
+    );
+}
+

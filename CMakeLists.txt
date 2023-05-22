@@ -18,9 +18,6 @@ set (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}  -fsanitize=address")
 
 set(PROJECT_SOURCES
         main.cpp
-        mainwindow.cpp
-        mainwindow.h
-        mainwindow.ui
         GameScene/Player.h
         GameScene/Player.cpp
         GameScene/GameScene.h
@@ -42,6 +39,12 @@ set(PROJECT_SOURCES
         GameScene/Animations/Animation.h
         GameScene/Animations/HarmAnimation.cpp
         GameScene/Animations/HarmAnimation.h
+        WelcomeWindow/welcomewindow.cpp
+        WelcomeWindow/welcomewindow.h
+        WelcomeWindow/welcomewindow.ui
+        Store/store.h
+        Store/store.cpp
+        Store/store.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

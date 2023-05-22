@@ -2,6 +2,7 @@
 #define GameScene_h
 
 #include <QtCore/qrect.h>
+#include <sys/_types/_time_t.h>
 #include <vector>
 #include <QGraphicsView>
 #include <QGraphicsScene>
@@ -24,6 +25,7 @@ class GameScene: public QGraphicsScene{
 public:
     GameScene(QWidget *parent=nullptr);
     ~GameScene();
+    json dumpState();
     vector<MapBlock*> walls;
     json config;
     Map *map;
@@ -34,6 +36,8 @@ public:
 public slots:
     void newEnemy();
 private:
+    QTimer *timer;
+    time_t startTime;
 };
 
 #endif

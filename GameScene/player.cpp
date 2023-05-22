@@ -19,11 +19,12 @@ Construct a player
 
 Config Example:
 {
+    "name":"Tim",
     "image":"images/player.png",
-    "life":120,
-    "speed":5,
+    "life":100,
+    "speed":10,
     "size":50,
-    "upgrade_hp": [100, 200, 300, 400, 500],
+    "enhance_hp": [100, 200, 300, 400, 500,1000,2000],
     "weapon":{
         "attack":5,
         "range":250
@@ -175,6 +176,30 @@ void Player::enhance(){
     enhance_count++;
     if(enhance_count==1)
         do_enhance();
+}
+
+json Player::dumpState(){
+    return json(
+        {
+            {
+                "pos",
+                {
+                    {"x",this->pos().x()},
+                    {"y",this->pos().y()}
+                }
+            },
+            {
+                "direction",
+                {
+                    {"x",this->direction.x()},
+                    {"y",this->direction.y()}
+                }
+            },
+            {"speed", this->speed},
+            {"next_enhance_hp_index",this->next_enhance_hp-this->enhance_hp.begin()},
+            {"weapon",this->weapon->dumpState()}
+        }
+    );
 }
 
 void Player::die(){

@@ -21,6 +21,7 @@ public:
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
     void advance(int step) override;
     void setAttackables(vector<Base*> *attackables);
+    json dumpState();
     uint hp=0;
     uint attack,range;
     bool debug=false;

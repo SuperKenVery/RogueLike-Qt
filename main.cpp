@@ -1,6 +1,5 @@
 // #include "mainwindow.h"
-#include "GameScene/GameScene.h"
-#include "mainwindow.h"
+#include "WelcomeWindow/welcomewindow.h"
 
 #include <QApplication>
 #include <QGraphicsView>
@@ -9,9 +8,8 @@
 
 int main(int argc, char *argv[])
 {
-    printf("main...\n");
     QApplication a(argc, argv);
-    MainWindow w;
+    WelcomeWindow w;
     w.show();
 
     return a.exec();

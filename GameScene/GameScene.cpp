@@ -23,6 +23,9 @@ using namespace std;
 GameScene::GameScene(QWidget *parent):
 QGraphicsScene(parent),
 createEnemyTimer(this){
+    // Record time to calculate live time
+    this->startTime=time(nullptr);
+
     // Load configuration file
     ifstream config_file("config.json");
     config_file >> this->config;
@@ -43,20 +46,21 @@ createEnemyTimer(this){
     this->player->focusItem();
     this->addItem(this->player);
     this->players=vector<Base*>({this->player});
-#if 0
+
     // Create enemy timer
     connect(&this->createEnemyTimer,&QTimer::timeout,this,&GameScene::newEnemy);
     this->createEnemyTimer.start(5000);
+
     /* Create an enemy now */
     this->newEnemy();
-#endif
 
+    this->timer=new QTimer;
+    connect(timer, &QTimer::timeout, this, &QGraphicsScene::advance);
+    timer->start(1000 / 60);
 
 }
 
 void GameScene::debug_panel(){
-
-
     this->player->setPos(0,0);
     this->player->harm(10);
 }
@@ -68,7 +72,25 @@ void GameScene::newEnemy(){
     this->enemies.push_back(e);
 }
 
+json GameScene::dumpState(){
+
+}
+
 GameScene::~GameScene(){
+    auto liveSeconds=time(nullptr)-this->startTime;
+    auto coinAdd=liveSeconds/6; // 10 coins a minute
+
+    // Save state
+    fstream storageFileStream("storage.json");
+    json storage;
+    storageFileStream>>storage;
+
+    uint currentCoins=storage["coins"];
+    storage["coins"]=currentCoins+coinAdd;
+    storage["state"]=this->dumpState();
+
+    storageFileStream << storage.dump();
+
     for(auto i: this->enemies)
         delete i;
     delete this->player;

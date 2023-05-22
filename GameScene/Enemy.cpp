@@ -31,6 +31,7 @@ Example Config:
 Enemy::Enemy(json config,attackable_list *attackables,GameScene *scene):
 Base(config["life"],config["size"],QImage(QString::fromStdString(config["image"]))){
     this->speed=config["speed"];
+    this->moveStrategyName=config["move_strategy"];
     this->strategy=move_strategies[config["move_strategy"]];
     if(this->strategy==nullptr) throw "Invalid move strategy";
 
@@ -142,4 +143,28 @@ unordered_map<string, move_strategy> Enemy::move_strategies={
         enemy->setPos(enemy->mapToParent(enemy->direction.toPointF()/enemy->direction.length()));
     }}
 };
+
+json Enemy::dumpState(){
+    return json(
+        {
+            {"weapon",this->weapon->dumpState()},
+            {
+                "pos",
+                {
+                    this->pos().x(),
+                    this->pos().y()
+                }
+            },
+            {"speed",this->speed},
+            {
+                "direction",
+                {
+                    {"x",this->direction.x()},
+                    {"y",this->direction.y()}
+                }
+            },
+            {"move_strategy",this->moveStrategyName}
+        }
+    );
+}
 
