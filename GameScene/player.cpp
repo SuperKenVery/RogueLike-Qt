@@ -202,6 +202,15 @@ json Player::dumpState(){
     );
 }
 
+void Player::resumeState(json storage){
+    this->setPos(storage["pos"]["x"],storage["pos"]["y"]);
+    this->direction.setX(storage["direction"]["x"]);
+    this->direction.setY(storage["direction"]["y"]);
+    this->speed=storage["speed"];
+    this->next_enhance_hp=this->enhance_hp.begin()+storage["next_enhance_hp_index"];
+    this->weapon->resumeState(storage["weapon"]);
+}
+
 void Player::die(){
     // TODO: die
 }

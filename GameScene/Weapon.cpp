@@ -61,3 +61,9 @@ json Weapon::dumpState(){
     );
 }
 
+void Weapon::resumeState(json storage){
+    this->hp=storage["hp"];
+    this->attack=storage["attack"];
+    this->range=storage["range"];
+}
+

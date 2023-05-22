@@ -27,6 +27,7 @@ public:
     static unordered_map<string, move_strategy> move_strategies;
     void die() override;
     json dumpState();
+    void resumeState(json storage) override;
 protected:
     void advance(int step) override;
 private:

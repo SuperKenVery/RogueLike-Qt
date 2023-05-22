@@ -24,6 +24,7 @@ class GameScene: public QGraphicsScene{
     Q_OBJECT
 public:
     GameScene(QWidget *parent=nullptr);
+    GameScene(json storage, QWidget *parent=nullptr);
     ~GameScene();
     json dumpState();
     vector<MapBlock*> walls;

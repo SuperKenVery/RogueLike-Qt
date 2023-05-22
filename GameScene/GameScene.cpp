@@ -46,17 +46,67 @@ enemyCreationTimer(this){
     this->addItem(this->player);
     this->players=vector<Base*>({this->player});
 
-    // Create enemy timer
+    // Enemy creation timer
     connect(&this->enemyCreationTimer,&QTimer::timeout,this,&GameScene::newEnemy);
     this->enemyCreationTimer.start(5000);
 
-    /* Create an enemy now */
+    // Create an enemy now
     this->newEnemy();
 
+    // Start ticking
     this->timer=new QTimer;
     connect(timer, &QTimer::timeout, this, &QGraphicsScene::advance);
     timer->start(1000 / 60);
+}
 
+// Resume from a saved game
+GameScene::GameScene(json storage, QWidget *parent):QGraphicsScene(parent),
+enemyCreationTimer(this){
+    // Record time to calculate live time
+    uint alreadyPassed=storage["liveTime"];
+    this->startTime=time(nullptr)-alreadyPassed;
+
+    // Load configuration file
+    ifstream config_file("config.json");
+    config_file >> this->config;
+    auto &config=this->config;
+
+    // Set size
+    this->setSceneRect(-400,-300,800,600);
+
+    // Create map
+    auto map_config=config["map"];
+    this->map=new Map(map_config,this);
+    this->walls=this->map->walls;
+    this->addItem(this->map);
+
+    // !!! TODO: Record player/enemy index for restoring!!!
+
+    // Create a player
+    // this->player=new Player(config["players"][1],&this->enemies,this);
+    // this->player->setPos(this->map->getFreePos());
+    // this->player->focusItem();
+    // this->addItem(this->player);
+    // this->players=vector<Base*>({this->player});
+
+    // Restore Enemies
+    for(auto enemyStorage: storage["enemies"]){
+        auto e=new Enemy(enemyStorage,&this->players,this);
+        this->addItem(e);
+        this->enemies.push_back(e);
+    }
+
+    // Enemy creation timer
+    connect(&this->enemyCreationTimer,&QTimer::timeout,this,&GameScene::newEnemy);
+    this->enemyCreationTimer.start(5000);
+
+    // Create an enemy now
+    this->newEnemy();
+
+    // Start ticking
+    this->timer=new QTimer;
+    connect(timer, &QTimer::timeout, this, &QGraphicsScene::advance);
+    timer->start(1000 / 60);
 }
 
 void GameScene::debug_panel(){

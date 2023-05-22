@@ -21,6 +21,7 @@ public:
     virtual void die()=0;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override final;
     virtual json dumpState()=0;
+    virtual void resumeState(json storage)=0;
     QRectF boundingRect() const override final;
     void advance(int step) override;
     vector<Animation*> animations;

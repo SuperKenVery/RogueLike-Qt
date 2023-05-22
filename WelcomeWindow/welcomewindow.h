@@ -18,6 +18,7 @@ public:
 public slots:
     void startGame();
     void store();
+    void continueGame();
 
 private:
     Ui::WelcomeWindow *ui;

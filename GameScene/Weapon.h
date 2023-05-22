@@ -22,6 +22,7 @@ public:
     void advance(int step) override;
     void setAttackables(vector<Base*> *attackables);
     json dumpState();
+    void resumeState(json storage);
     uint hp=0;
     uint attack,range;
     bool debug=false;

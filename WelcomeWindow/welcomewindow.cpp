@@ -15,6 +15,7 @@ WelcomeWindow::WelcomeWindow(QWidget *parent) :
     ui->setupUi(this);
     connect(ui->startGameButton,&QPushButton::clicked,this,&WelcomeWindow::startGame);
     connect(ui->storeButton,&QPushButton::clicked,this,&WelcomeWindow::store);
+    connect(ui->continueGameButton,&QPushButton::clicked,this,&WelcomeWindow::continueGame);
 }
 
 void WelcomeWindow::store(){
@@ -36,6 +37,10 @@ void WelcomeWindow::startGame(){
     auto bound=scene->itemsBoundingRect();
     win->setFixedSize(bound.width(),bound.height());
     win->show();
+}
+
+void WelcomeWindow::continueGame(){
+
 }
 
 WelcomeWindow::~WelcomeWindow()
