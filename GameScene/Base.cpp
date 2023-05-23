@@ -46,7 +46,6 @@ void Base::advance(int step){
         if(finished)
             for(auto t=this->animations.begin();t!=this->animations.end();t++)
                 if(*t==a){
-                    printf("An animation has finished\n");
                     this->animations.erase(t);
                     break;
                 }

@@ -36,7 +36,6 @@ obj(obj){
         -size.height()-obj->boundingRect().height()/2
     );
     auto pos=scenePos+QPointF(sceneRect.width()/2,sceneRect.height()/2);
-    printf("Object at (%f,%f), mapping to (%f,%f)\n",obj->pos().x(),obj->pos().y(),pos.x(),pos.y());
 
     this->label->setGeometry(pos.x(),pos.y(),size.width(),size.height());
     this->label->show();
@@ -51,7 +50,6 @@ bool HarmAnimation::tick(uint step){
 
     this->label->move(this->label->x(),this->label->y()-step);
     double opacity=0.7*(this->total_frames-this->frame)/this->total_frames;
-    printf("Opacity is %f\n",opacity);
     auto p=this->label->palette();
     auto c=p.color(QPalette::Text);
     c.setAlpha(128);

@@ -28,6 +28,7 @@ public:
     bool debug=false;
 private:
     vector<Base*> *attackables;
+    uint count=0;
 };
 
 #endif

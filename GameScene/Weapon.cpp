@@ -33,20 +33,20 @@ void Weapon::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QW
 }
 
 void Weapon::advance(int step){
-    static unsigned int count=0;
-    count+=step;
-    if(count>100){
-        DBGPRINT("Player weapon going to attack...\n")
+    // DBGPRINT("Advance count=%d step=%d\n",count,step);
+    this->count+=step;
+    if(this->count>100){
+        DBGPRINT("Player weapon going to attack... size of attackables is %lu\n",this->attackables->size())
         for(auto o: *this->attackables){
-            auto x1=o->pos().x(),y1=o->pos().y(),x2=this->pos().x(),y2=this->pos().y();
+            auto x1=o->pos().x(),y1=o->pos().y(),x2=this->parentItem()->pos().x(),y2=this->parentItem()->pos().y();
             auto dist=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
             if(dist<=this->range){
                 auto real_damage=o->harm(this->attack);
                 this->hp+=real_damage;
-                DBGPRINT("Player weapon attacked! HP += %d to %d\n",this->attack,this->hp)
+                DBGPRINT("Player weapon attacked!\n")
             }
         }
-        count-=100;
+        this->count-=100;
     }
 
 }

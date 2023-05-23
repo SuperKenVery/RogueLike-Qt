@@ -302,6 +302,12 @@
 			null
 		],
 		[
+			"/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/DieWindow/diewindow.h",
+			"MU",
+			"C45DMSXCRN/moc_diewindow.cpp",
+			null
+		],
+		[
 			"/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Enemy.h",
 			"MU",
 			"QPTSQ33FLT/moc_Enemy.cpp",
@@ -335,6 +341,12 @@
 			"/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Player.h",
 			"MU",
 			"QPTSQ33FLT/moc_Player.cpp",
+			null
+		],
+		[
+			"/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/ResumeFailedWindow/resumefailedwindow.h",
+			"MU",
+			"XBIESEAAQW/moc_resumefailedwindow.cpp",
 			null
 		],
 		[
@@ -425,6 +437,11 @@
 			null
 		],
 		[
+			"/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/DieWindow/diewindow.cpp",
+			"MU",
+			null
+		],
+		[
 			"/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Enemy.cpp",
 			"MU",
 			null
@@ -451,6 +468,11 @@
 		],
 		[
 			"/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Player.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/ResumeFailedWindow/resumefailedwindow.cpp",
 			"MU",
 			null
 		],

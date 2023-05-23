@@ -45,6 +45,12 @@ set(PROJECT_SOURCES
         Store/store.h
         Store/store.cpp
         Store/store.ui
+        GameScene/DieWindow/diewindow.h
+        GameScene/DieWindow/diewindow.cpp
+        GameScene/DieWindow/diewindow.ui
+        GameScene/ResumeFailedWindow/resumefailedwindow.h
+        GameScene/ResumeFailedWindow/resumefailedwindow.cpp
+        GameScene/ResumeFailedWindow/resumefailedwindow.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

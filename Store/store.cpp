@@ -93,16 +93,11 @@ Store::Store(QWidget *parent) :
     // When you're in store you won't be in game
     // So just open the files.
 
+    // Reload everything on next open
+    this->setAttribute(Qt::WA_DeleteOnClose);
+
     auto configFileStream=ifstream("config.json");
     configFileStream >> this->config;
-
-    if(!filesystem::exists("storage.json")){
-        auto storageFileStream=ofstream("storage.json");
-        json storage;
-        storage["config"]=this->config;
-        storage["coins"]=0;
-        storageFileStream << storage.dump();
-    }
 
     this->storageFileStream.open("storage.json");
     this->storageFileStream >> this->storage;
@@ -117,11 +112,11 @@ Store::Store(QWidget *parent) :
 
 void Store::buildEnhanceWidgets(){
     auto &config=this->config;
-    auto &storage=this->storage["config"];
+    auto &storage=this->storage["configOverride"];
 
     auto playerTabber=new QTabWidget(this);
 
-    auto playerEnhanceOptions=getEnhanceOptions(config["players"][1], {"enhance_hp","weapon"});
+    auto playerEnhanceOptions=getEnhanceOptions(config["players"][1], {"enhance_hp","weapon","image","name","size"});
     auto weaponEnhanceOptions=getEnhanceOptions(config["players"][1]["weapon"], {});
     const auto useCoins=10; // How many coins does an enhancement use
 
@@ -158,7 +153,7 @@ void Store::buildEnhanceWidgets(){
             [](QString optionName){
                 return optionName+" 1.5x";
             },
-            [&](int index){
+            [=,&storage](int index){
                 if(this->storage["coins"]<useCoins){
                     // Can't enhance
                 }else{

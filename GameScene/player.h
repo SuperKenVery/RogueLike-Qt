@@ -38,6 +38,7 @@ private:
     uint speed;
     vector<uint> enhance_hp;
     vector<uint>::iterator next_enhance_hp;
+    uint enhanceCount=0;
 };
 
 #endif // PLAYER_H

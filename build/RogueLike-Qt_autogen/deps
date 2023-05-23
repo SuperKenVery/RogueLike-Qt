@@ -713,6 +713,8 @@ RogueLike-Qt_autogen/timestamp: \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Animations/HarmAnimation.h \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Base.cpp \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Base.h \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/DieWindow/diewindow.cpp \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/DieWindow/diewindow.h \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Enemy.cpp \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Enemy.h \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/EnhanceOpt/EnhanceOption.cpp \
@@ -725,11 +727,12 @@ RogueLike-Qt_autogen/timestamp: \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Map.h \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Player.cpp \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Player.h \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/ResumeFailedWindow/resumefailedwindow.cpp \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/ResumeFailedWindow/resumefailedwindow.h \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Weapon.cpp \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Weapon.h \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/Store/store.cpp \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/Store/store.h \
-	/Users/ken/Codes/RogueLike/RogueLike-Qt/WelcomeWindow/WelcomeWindow.h \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/WelcomeWindow/welcomewindow.cpp \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/WelcomeWindow/welcomewindow.h \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/build/CMakeFiles/3.26.3/CMakeCXXCompiler.cmake \
@@ -1155,6 +1158,8 @@ RogueLike-Qt_autogen/timestamp: \
 	/opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/Platform/Darwin-Initialize.cmake \
 	/opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/Platform/Darwin.cmake \
 	/opt/homebrew/Cellar/cmake/3.26.3/share/cmake/Modules/Platform/UnixPaths.cmake \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/DieWindow/diewindow.ui \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/ResumeFailedWindow/resumefailedwindow.ui \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/Store/store.ui \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/WelcomeWindow/welcomewindow.ui \
 	/opt/homebrew/Cellar/cmake/3.26.3/bin/cmake

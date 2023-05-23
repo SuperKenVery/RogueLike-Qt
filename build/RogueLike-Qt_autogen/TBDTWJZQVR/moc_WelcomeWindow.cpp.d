@@ -1,4 +1,4 @@
-/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/TBDTWJZQVR/moc_WelcomeWindow.cpp: /Users/ken/Codes/RogueLike/RogueLike-Qt/WelcomeWindow/WelcomeWindow.h \
+/Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/TBDTWJZQVR/moc_welcomewindow.cpp: /Users/ken/Codes/RogueLike/RogueLike-Qt/WelcomeWindow/welcomewindow.h \
   /Users/ken/Codes/RogueLike/RogueLike-Qt/build/RogueLike-Qt_autogen/moc_predefs.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h \

@@ -26,8 +26,10 @@ public:
     Enemy(json config,attackable_list *attackables,GameScene *scene);
     static unordered_map<string, move_strategy> move_strategies;
     void die() override;
-    json dumpState();
+    json dumpState() override;
     void resumeState(json storage) override;
+signals:
+    void deleteMe(Enemy *e);
 protected:
     void advance(int step) override;
 private:
