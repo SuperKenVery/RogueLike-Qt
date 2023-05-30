@@ -279,7 +279,7 @@ build RogueLike-Qt_autogen/timestamp RogueLike-Qt_autogen/mocs_compilation.cpp |
 #############################################
 # Phony custom command for CMakeFiles/RogueLike-Qt_autogen_timestamp_deps
 
-build CMakeFiles/RogueLike-Qt_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/RogueLike-Qt_autogen_timestamp_deps: phony /Users/ken/Qt/6.5.0/macos/./libexec/uic /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/QtCore /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/ken/Qt/6.5.0/macos/./libexec/moc
+build CMakeFiles/RogueLike-Qt_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/RogueLike-Qt_autogen_timestamp_deps: phony /Users/ken/Qt/6.5.0/macos/./libexec/moc /Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/ken/Qt/6.5.0/macos/lib/QtCore.framework/Versions/A/QtCore /Users/ken/Qt/6.5.0/macos/./libexec/uic
 
 
 #############################################
