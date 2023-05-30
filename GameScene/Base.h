@@ -5,6 +5,7 @@
 #include "GameScene.h"
 #include <QGraphicsItem>
 #include <QtCore/qrect.h>
+#include <QtCore/qtmetamacros.h>
 #include <QtGui/qimage.h>
 #include <QtWidgets/qgraphicsitem.h>
 #include <vector>
@@ -12,9 +13,14 @@
 using namespace std;
 using json=nlohmann::json;
 
+#define DBGPRINT(...) \
+    if(this->debug){ \
+        printf(__VA_ARGS__); \
+    }
+
 class Base: public QGraphicsItem{
 public:
-    Base(uint life, uint size, QImage image, QGraphicsItem* parent=nullptr);
+    Base(uint life, uint size, QImage image, QGraphicsItem* parent=nullptr,bool debug=false);
 
     virtual uint harm(uint damage);
     bool valid();
@@ -28,5 +34,7 @@ public:
 protected:
     uint life,size;
     QImage image;
+private:
+    bool debug=false;
 };
 #endif

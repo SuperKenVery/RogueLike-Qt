@@ -132,14 +132,14 @@ void GameScene::newEnemy(){
 }
 
 void GameScene::deleteEnemy(Enemy *e){
-    auto enemiesCopy=this->enemies;
-    for(auto E: enemiesCopy){
-        if(E==e){
-            this->enemies.erase(find(this->enemies.begin(),this->enemies.end(),e));
-            this->removeItem(e);
-            delete e;
-            break;
-        }
+    auto eIt=find(this->enemies.begin(),this->enemies.end(),e);
+    if(eIt!=this->enemies.end()){
+        printf("Delete enemy at %p\n",*eIt);
+        delete *eIt;
+        this->enemies.erase(eIt);
+        printf("Size after delete: %lu\n",this->enemies.size());
+    }else{
+        throw "Cannot delete enemy";
     }
 }
 

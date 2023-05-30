@@ -5,8 +5,6 @@
 #include <QtGui/qpainterpath.h>
 #include <QtWidgets/qgraphicsitem.h>
 
-#define DBGPRINT(...) if(this->debug){printf(__VA_ARGS__);}
-
 /*
 Construct a weapon
 
@@ -37,15 +35,19 @@ void Weapon::advance(int step){
     this->count+=step;
     if(this->count>100){
         DBGPRINT("Player weapon going to attack... size of attackables is %lu\n",this->attackables->size())
-        for(auto o: *this->attackables){
+        printf("Going to attack... size of attackables is %lu\n",this->attackables->size());
+        auto attackables_copy=*this->attackables;
+        for(auto o: attackables_copy){
             auto x1=o->pos().x(),y1=o->pos().y(),x2=this->parentItem()->pos().x(),y2=this->parentItem()->pos().y();
             auto dist=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
             if(dist<=this->range){
+                printf("Attacking obj at %p, dbg=%d\n",o,this->debug);
                 auto real_damage=o->harm(this->attack);
                 this->hp+=real_damage;
                 DBGPRINT("Player weapon attacked!\n")
             }
         }
+        printf("Done attacking\n");
         this->count-=100;
     }
 

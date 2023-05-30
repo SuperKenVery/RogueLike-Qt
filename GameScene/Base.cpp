@@ -4,10 +4,11 @@
 #include "Map.h"
 #include <QtCore/qrect.h>
 
-Base::Base(uint life,uint size,QImage image,QGraphicsItem* parent):
+Base::Base(uint life,uint size,QImage image,QGraphicsItem* parent,bool debug):
 QGraphicsItem(parent),
 life(life),
-size(size){
+size(size),
+debug(debug){
     if(image.isNull()) throw "Failed to load image";
     else this->image=image;
 }
@@ -17,14 +18,26 @@ uint Base::harm(uint damage){
     if(damage>this->life){
         real_damage=this->life;
         this->life=0;
+        DBGPRINT("Player die!\n")
         this->die();
+        return real_damage;
     }else{
         this->life-=damage;
         real_damage=damage;
+
+        DBGPRINT("Player life -%d to %d\n",real_damage,this->life)
     }
-    this->animations.push_back(new HarmAnimation(
-        this,real_damage
-    ));
+    // this->animations.push_back(new HarmAnimation(
+    //     this,real_damage
+    // ));
+    {
+        DBGPRINT("Going to dangerous zone\n");
+        auto &a=this->animations;
+        auto size=a.size();
+        auto b=new HarmAnimation(this,real_damage);
+        a.push_back(b);
+        DBGPRINT("Exit dangerous zone\n")
+    }
     return real_damage;
 }
 
@@ -43,12 +56,13 @@ void Base::advance(int step){
     auto animations_copy=this->animations;
     for(auto a:animations_copy){
         auto finished=a->tick(step);
-        if(finished)
-            for(auto t=this->animations.begin();t!=this->animations.end();t++)
-                if(*t==a){
-                    this->animations.erase(t);
-                    break;
-                }
+        if(finished){
+            auto it=std::find(this->animations.begin(),this->animations.end(),a);
+            if(it!=this->animations.end()){
+                this->animations.erase(it);
+                delete a;
+            }
+        }
     }
 }
 

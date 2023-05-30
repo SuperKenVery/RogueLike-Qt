@@ -28,6 +28,8 @@ public:
      * Don't seem to need it currently...
     */
     // bool override_rendering=false;
+
+    virtual ~Animation()=default;
 };
 
 #endif

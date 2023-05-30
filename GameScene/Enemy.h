@@ -24,6 +24,7 @@ typedef vector<Base*> attackable_list;
 class Enemy: public Base{
 public:
     Enemy(json config,attackable_list *attackables,GameScene *scene);
+    ~Enemy();
     static unordered_map<string, move_strategy> move_strategies;
     void die() override;
     json dumpState() override;

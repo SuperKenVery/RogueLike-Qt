@@ -77,7 +77,6 @@ Base(config["life"],config["size"],QImage(QString::fromStdString(config["image"]
     default:
         throw "Invalid edge";
     }
-    scene->connect(this,&Enemy::deleteMe,scene,&GameScene::deleteEnemy);
 }
 
 
@@ -99,7 +98,7 @@ void Enemy::advance(int step){
 }
 
 void Enemy::die(){
-    emit deleteMe(this);
+    static_cast<GameScene*>(this->scene())->deleteEnemy(this);
 }
 
 unordered_map<string, move_strategy> Enemy::move_strategies={
@@ -178,5 +177,9 @@ void Enemy::resumeState(json storage){
     this->life=storage["life"];
     this->moveStrategyName=storage["move_strategy"];
     this->strategy=move_strategies[storage["move_strategy"]];
+}
+
+Enemy::~Enemy(){
+    delete this->weapon;
 }
 

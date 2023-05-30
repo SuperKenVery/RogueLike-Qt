@@ -34,7 +34,7 @@ Config Example:
 
 
 Player::Player(json config,attackable_list *attackables,GameScene *scene):
-Base(config["life"],config["size"],QImage(QString::fromStdString(config["image"]))){
+Base(config["life"],config["size"],QImage(QString::fromStdString(config["image"])),nullptr,true){
     this->speed=config["speed"];
     this->enhance_hp=vector<uint>(config["enhance_hp"]);
     this->next_enhance_hp=this->enhance_hp.begin();
