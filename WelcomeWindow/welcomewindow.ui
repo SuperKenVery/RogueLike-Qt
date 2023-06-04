@@ -43,7 +43,7 @@
     <property name="geometry">
      <rect>
       <x>350</x>
-      <y>340</y>
+      <y>320</y>
       <width>100</width>
       <height>32</height>
      </rect>
@@ -78,6 +78,29 @@
      <string>Resume Game</string>
     </property>
    </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>330</y>
+      <width>58</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>With:</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="playerChooser">
+    <property name="geometry">
+     <rect>
+      <x>540</x>
+      <y>320</y>
+      <width>103</width>
+      <height>32</height>
+     </rect>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -85,7 +108,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>24</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>

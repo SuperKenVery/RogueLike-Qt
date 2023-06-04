@@ -5556,6 +5556,8 @@
 /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Animations/HarmAnimation.cpp
 /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/ResumeFailedWindow/resumefailedwindow.cpp
  uic:ui_resumefailedwindow.h
+/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/DieWindow/diewindow.cpp
+ uic:ui_diewindow.h
 /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/GameScene.h
  mmc:Q_OBJECT
  mdp:/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/GameScene.h
@@ -6446,8 +6448,6 @@
  mdp:/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h
  mdp:/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
 /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Enemy.h
-/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/DieWindow/diewindow.cpp
- uic:ui_diewindow.h
 /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/EnhanceOpt/EnhancePanel.h
  mmc:Q_OBJECT
  mdp:/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/EnhanceOpt/EnhancePanel.h

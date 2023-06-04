@@ -30,6 +30,19 @@ WelcomeWindow::WelcomeWindow(QWidget *parent) :
     }
 
     ui->setupUi(this);
+
+    // Setup player chooser
+    auto storageFileStream=ifstream("storage.json");
+    json storage;
+    storageFileStream >> storage;
+    auto &config=storage["configOverride"];
+    auto &players=config["players"];
+    for(auto playerIndex=1;playerIndex<players.size();playerIndex++){
+        printf("Adding %s\n",players[playerIndex]["name"].get<string>().c_str());
+        ui->playerChooser->addItem(QString::fromStdString(players[playerIndex]["name"]));
+    }
+
+    // Connect button events
     connect(ui->startGameButton,&QPushButton::clicked,this,&WelcomeWindow::startGame);
     connect(ui->storeButton,&QPushButton::clicked,this,&WelcomeWindow::store);
     connect(ui->continueGameButton,&QPushButton::clicked,this,&WelcomeWindow::continueGame);
@@ -54,7 +67,8 @@ void WelcomeWindow::startGame(){
     win->setAttribute(Qt::WA_DeleteOnClose);
 
     auto graphicsView=new QGraphicsView(win);
-    auto scene=new GameScene(graphicsView);
+    auto playerIndex=this->ui->playerChooser->currentIndex()+1;
+    auto scene=new GameScene(graphicsView,playerIndex);
     graphicsView->setScene(scene);
 
     makeFit(win, graphicsView);

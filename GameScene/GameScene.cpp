@@ -25,7 +25,7 @@
 
 using namespace std;
 
-GameScene::GameScene(QWidget *parent):
+GameScene::GameScene(QWidget *parent,uint playerIndex):
 QGraphicsScene(parent),
 enemyCreationTimer(this){
     // Record time to calculate live time

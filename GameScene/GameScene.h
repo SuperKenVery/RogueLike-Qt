@@ -24,7 +24,7 @@ class Base;
 class GameScene: public QGraphicsScene{
     Q_OBJECT
 public:
-    GameScene(QWidget *parent=nullptr);
+    GameScene(QWidget *parent=nullptr,uint playerIndex=1);
     /* Resume from a saved game
      * @param storage: the storage of the saved game
      * @param parent: the parent widget
