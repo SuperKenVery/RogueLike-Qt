@@ -3,10 +3,12 @@
 #include "GameScene.h"
 #include "Map.h"
 #include <QtCore/qrect.h>
+#include <QtGui/qcolor.h>
 
 Base::Base(uint life,uint size,QImage image,QGraphicsItem* parent,bool debug):
 QGraphicsItem(parent),
 life(life),
+total_life(life),
 size(size),
 debug(debug){
     if(image.isNull()) throw "Failed to load image";
@@ -41,6 +43,18 @@ QRectF Base::boundingRect() const{
 
 void Base::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget){
     painter->drawImage(this->boundingRect(),this->image);
+
+    // Life bar
+    const auto height=5;
+    painter->fillRect(
+        QRect(-(this->size/2),this->size/2-height,this->size,height),
+        QColor(100,100,100)
+    );
+    double life_ratio=((double)this->life)/this->total_life;
+    painter->fillRect(
+        QRect(-(this->size/2),this->size/2-height,this->size*life_ratio,height),
+        QColor(0,255,0)
+    );
 }
 
 void Base::advance(int step){

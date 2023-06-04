@@ -22,7 +22,6 @@ public:
 private:
     void buildEnhanceWidgets();
     Ui::Store *ui;
-    fstream storageFileStream;
     json config,storage;
 };
 

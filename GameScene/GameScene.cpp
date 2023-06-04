@@ -31,9 +31,11 @@ enemyCreationTimer(this){
     // Record time to calculate live time
     this->startTime=time(nullptr);
 
-    // Load configuration file
-    ifstream config_file("config.json");
-    config_file >> this->config;
+    // Load configuration from storage's configOverride
+    ifstream storage_file("storage.json");
+    json storage;
+    storage_file >> storage;
+    this->config=storage["configOverride"];
     auto &config=this->config;
 
     // Set size
@@ -183,7 +185,7 @@ json GameScene::dumpState(){
     }
     return json(
         {
-            R"( {"exist":true} )"_json,
+            {"exist",true},
             {"liveTime",time(nullptr)-this->startTime},
             {"player",this->player->dumpState()},
             {"playerIndex",this->playerIndex},

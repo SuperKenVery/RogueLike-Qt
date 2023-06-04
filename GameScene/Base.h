@@ -32,7 +32,7 @@ public:
     void advance(int step) override;
     vector<Animation*> animations;
 protected:
-    uint life,size;
+    uint life,size,total_life;
     QImage image;
 private:
     bool debug=false;

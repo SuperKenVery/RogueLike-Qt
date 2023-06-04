@@ -99,8 +99,8 @@ Store::Store(QWidget *parent) :
     auto configFileStream=ifstream("config.json");
     configFileStream >> this->config;
 
-    this->storageFileStream.open("storage.json");
-    this->storageFileStream >> this->storage;
+    auto storageFileStream=ifstream("storage.json");
+    storageFileStream >> this->storage;
 
     ui->setupUi(this);
 
@@ -129,7 +129,7 @@ void Store::buildEnhanceWidgets(){
             [](QString optionName){
                 return optionName+" 1.5x";
             }
-            ,[&](int index){
+            ,[=,&storage](int index){
                 if(this->storage["coins"]<useCoins){
                     // Can't enhance
                 }else{
@@ -183,6 +183,6 @@ void Store::buildEnhanceWidgets(){
 Store::~Store()
 {
     delete ui;
-    this->storageFileStream << this->storage.dump();
-    this->storageFileStream.close();
+    auto storageFileStream=ofstream("storage.json");
+    storageFileStream << this->storage.dump();
 }
