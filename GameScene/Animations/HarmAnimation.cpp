@@ -1,4 +1,7 @@
 #include "HarmAnimation.h"
+#include "Animation.h"
+#include <QtCore/qrect.h>
+#include <QtGui/qfont.h>
 #include <QtGui/qimage.h>
 #include <QColorTransform>
 #include <QtGui/qpalette.h>
@@ -12,23 +15,33 @@
  * and that makes alpha completely disappear for red colors
 */
 
-HarmAnimation::HarmAnimation(Base *obj,uint damage):
-obj(obj){
+HarmAnimation::HarmAnimation(Base *obj,uint damage,bool debug):
+obj(obj),
+debug(debug),
+Animation(obj){
     this->text=QString("-%1").arg(damage);
 }
 
-bool HarmAnimation::tick(uint step){
-    if(this->frame==this->total_frames){
-        return true;
+QRectF HarmAnimation::boundingRect() const{
+    return QRectF(-this->obj->boundingRect().width()/2,-this->obj->boundingRect().height()/2-this->height,this->obj->boundingRect().width(),this->obj->boundingRect().height()+this->height);
+}
+
+void HarmAnimation::advance(int step){
+    if(this->frame>=this->total_frames){
+        delete this;
+        return;
     }
     this->frame+=step;
 
-    this->opacity=1.0-(double(this->frame)/this->total_frames);
-    this->hOffset+=((double)this->frame/this->total_frames)*30;
-    return false;
+    double frame=this->frame;
+
+    this->opacity=1.0-(frame/this->total_frames);
+    this->hOffset=(frame/this->total_frames)*this->height;
+    this->update();
 }
 
-void HarmAnimation::paintHook(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget){
+void HarmAnimation::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget){
+    painter->setPen(QColor(255,0,0,255*this->opacity));
     painter->drawText(0,-this->obj->boundingRect().height()/2-this->hOffset,this->text);
 }
 

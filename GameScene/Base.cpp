@@ -27,17 +27,11 @@ uint Base::harm(uint damage){
 
         DBGPRINT("Player life -%d to %d\n",real_damage,this->life)
     }
-    // this->animations.push_back(new HarmAnimation(
-    //     this,real_damage
-    // ));
-    {
-        DBGPRINT("Going to dangerous zone\n");
-        auto &a=this->animations;
-        auto size=a.size();
-        auto b=new HarmAnimation(this,real_damage);
-        a.push_back(b);
-        DBGPRINT("Exit dangerous zone\n")
-    }
+
+    this->animations.push_back(new HarmAnimation(
+        this,real_damage,this->debug
+    ));
+
     return real_damage;
 }
 
@@ -46,24 +40,12 @@ QRectF Base::boundingRect() const{
 }
 
 void Base::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget){
-    for(auto a:this->animations) a->paintHook(painter, option, widget);
     painter->drawImage(this->boundingRect(),this->image);
 }
 
 void Base::advance(int step){
     if(step==0) return;
 
-    auto animations_copy=this->animations;
-    for(auto a:animations_copy){
-        auto finished=a->tick(step);
-        if(finished){
-            auto it=std::find(this->animations.begin(),this->animations.end(),a);
-            if(it!=this->animations.end()){
-                this->animations.erase(it);
-                delete a;
-            }
-        }
-    }
 }
 
 bool Base::valid(){

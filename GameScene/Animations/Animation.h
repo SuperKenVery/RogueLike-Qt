@@ -4,30 +4,16 @@
 #include <QPainter>
 #include <QStyleOption>
 #include <QWidget>
+#include <QGraphicsView>
+#include <QGraphicsItem>
+#include <QtCore/qrect.h>
 
-typedef unsigned int uint;
-
-class Animation {
+class Animation: public QGraphicsItem {
 public:
-    /* Run the animation
-     * Must be overridden by subclass
-     *
-     * @param step How many steps to run
-     * @return Whether the animation is finished
-    */
-    virtual bool tick(uint step)=0;
-
-    virtual void paintHook(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget){
-        // Does nothing by default
-    }
-
-    /* Whether this animation totally overrides the rendering of the object
-     *
-     * An object shouldn't have two animation with override_rendering=true
-     *
-     * Don't seem to need it currently...
-    */
-    // bool override_rendering=false;
+    Animation(QGraphicsItem* parent=nullptr):QGraphicsItem(parent){}
+    virtual void advance(int step) override=0;
+    virtual QRectF boundingRect() const override=0;
+    virtual void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override=0;
 
     virtual ~Animation()=default;
 };
