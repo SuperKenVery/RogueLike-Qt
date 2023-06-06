@@ -47,7 +47,6 @@ Base(config["life"],config["size"],QImage(QString::fromStdString(config["image"]
         2-bottom edge
         3-left edge
     */
-    edge=0;
     auto xw=scene->width()-this->size, xh=scene->height()-this->size;
     switch(edge){
     case 0:
