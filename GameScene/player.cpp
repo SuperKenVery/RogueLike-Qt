@@ -120,6 +120,8 @@ void Player::advance(int step){
         }
         this->enhance();
     }
+
+    this->setFocus();
 }
 
 void Player::enhance(){
