@@ -198,7 +198,8 @@ json Player::dumpState(){
             },
             {"speed", this->speed},
             {"next_enhance_hp_index",this->next_enhance_hp-this->enhance_hp.begin()},
-            {"weapon",this->weapon->dumpState()}
+            {"weapon",this->weapon->dumpState()},
+            {"life",this->life}
         }
     );
 }
@@ -210,6 +211,8 @@ void Player::resumeState(json storage){
     this->speed=storage["speed"];
     this->next_enhance_hp=this->enhance_hp.begin()+storage["next_enhance_hp_index"];
     this->weapon->resumeState(storage["weapon"]);
+    printf("Setting life from %d to %d\n",this->life,int(storage["life"]));
+    this->life=storage["life"];
 }
 
 void Player::die(){

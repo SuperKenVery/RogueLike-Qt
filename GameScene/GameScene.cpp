@@ -75,9 +75,8 @@ enemyCreationTimer(this){
     uint alreadyPassed=storage["state"]["liveTime"];
     this->startTime=time(nullptr)-alreadyPassed;
 
-    // Load configuration file
-    ifstream config_file("config.json");
-    config_file >> this->config;
+    // Load configuration
+    this->config=storage["configOverride"];
     auto &config=this->config;
 
     // Set size

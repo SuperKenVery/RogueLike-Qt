@@ -21,11 +21,11 @@ cb(cb){
 
 void EnhancePanel::enhanced(){
     this->deleteLater();
+    this->cb();
 }
 
 EnhancePanel::~EnhancePanel(){
     for(auto *i: this->options){
         delete i;
     }
-    this->cb();
 }
