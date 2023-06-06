@@ -29,6 +29,8 @@ public:
 private:
     vector<Base*> *attackables;
     uint count=0;
+    constexpr static uint total_frames=100;
+    uint frame=total_frames;
 };
 
 #endif
