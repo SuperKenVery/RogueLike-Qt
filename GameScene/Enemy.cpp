@@ -6,6 +6,7 @@
 #include <cstdlib>
 #include <unordered_map>
 #include <random>
+#include "Drops.h"
 #include "GameScene.h"
 #include "Weapon.h"
 #include "Player.h"
@@ -29,7 +30,8 @@ Example Config:
 }
 */
 Enemy::Enemy(json config,attackable_list *attackables,GameScene *scene):
-Base(config["life"],config["size"],QImage(QString::fromStdString(config["image"]))){
+Base(config["life"],config["size"],QImage(QString::fromStdString(config["image"]))),
+config(config){
     this->speed=config["speed"];
     this->moveStrategyName=config["move_strategy"];
     this->strategy=move_strategies[config["move_strategy"]];
@@ -97,7 +99,31 @@ void Enemy::advance(int step){
 }
 
 void Enemy::die(){
-    static_cast<GameScene*>(this->scene())->deleteEnemy(this);
+    // Create a Dropping
+    int dropOrNot=rand()%3;
+    if(dropOrNot==0){
+        auto dropIndex=rand()%this->config["drops"].size();
+        auto drop=new Drop(
+            this->config["drops"][dropIndex],
+            this->pos()
+        );
+        auto scene=static_cast<GameScene*>(this->scene());
+        scene->addItem(drop);
+        scene->drops.push_back({dropIndex,drop});
+    }
+
+    // Cleanup
+    // static_cast<GameScene*>(this->scene())->deleteEnemy(this);
+    auto scene=static_cast<GameScene*>(this->scene());
+    scene->removeItem(this);
+    for(auto it=scene->enemies.begin();it!=scene->enemies.end();it++){
+        auto [index, obj]=*it;
+        if(obj==this){
+            scene->enemies.erase(it);
+            break;
+        }
+    }
+    delete this;
 }
 
 unordered_map<string, move_strategy> Enemy::move_strategies={
@@ -163,7 +189,7 @@ json Enemy::dumpState(){
                 }
             },
             {"life",this->life},
-            {"move_strategy",this->moveStrategyName}
+            {"move_strategy",this->moveStrategyName},
         }
     );
 }

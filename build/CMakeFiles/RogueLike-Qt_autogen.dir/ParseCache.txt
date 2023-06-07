@@ -2557,14 +2557,15 @@
  mdp:/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h
  mdp:/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h
  mdp:/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
-/Users/ken/Codes/RogueLike/RogueLike-Qt/WelcomeWindow/welcomewindow.cpp
- uic:ui_welcomewindow.h
-/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Player.h
+/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Drops.cpp
 /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Enemy.cpp
-/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Player.cpp
+/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Base.h
 /Users/ken/Codes/RogueLike/RogueLike-Qt/WelcomeWindow/WelcomeWindow.cpp
  uic:ui_welcomewindow.h
-/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Base.h
+/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Player.cpp
+/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Player.h
+/Users/ken/Codes/RogueLike/RogueLike-Qt/WelcomeWindow/welcomewindow.cpp
+ uic:ui_welcomewindow.h
 /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/ResumeFailedWindow/resumefailedwindow.h
  mmc:Q_OBJECT
  mdp:/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/ResumeFailedWindow/resumefailedwindow.h
@@ -4889,8 +4890,6 @@
  mdp:/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h
  mdp:/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h
  mdp:/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
-/Users/ken/Codes/RogueLike/RogueLike-Qt/Store/store.cpp
- uic:ui_store.h
 /Users/ken/Codes/RogueLike/RogueLike-Qt/mainwindow.h
  mmc:Q_OBJECT
  mdp:/Users/ken/Codes/RogueLike/RogueLike-Qt/mainwindow.h
@@ -5671,6 +5670,8 @@
  mdp:/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsexports.h
  mdp:/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qtwidgetsglobal.h
  mdp:/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
+/Users/ken/Codes/RogueLike/RogueLike-Qt/Store/store.cpp
+ uic:ui_store.h
 /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/GameScene.cpp
 /Users/ken/Codes/RogueLike/RogueLike-Qt/main.cpp
 /Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/EnhanceOpt/EnhancePanel.cpp
@@ -6446,6 +6447,7 @@
  mdp:/Users/ken/Qt/6.5.0/macos/lib/QtWidgets.framework/Versions/A/Headers/qwidget.h
 /Users/ken/Codes/RogueLike/RogueLike-Qt/mainwindow.cpp
  uic:./ui_mainwindow.h
+/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Drops.h
 /Users/ken/Codes/RogueLike/RogueLike-Qt/WelcomeWindow/welcomewindow.h
  mmc:Q_OBJECT
  mdp:/Users/ken/Codes/RogueLike/RogueLike-Qt/WelcomeWindow/welcomewindow.h

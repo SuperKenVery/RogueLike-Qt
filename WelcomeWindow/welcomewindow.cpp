@@ -38,7 +38,6 @@ WelcomeWindow::WelcomeWindow(QWidget *parent) :
     auto &config=storage["configOverride"];
     auto &players=config["players"];
     for(auto playerIndex=1;playerIndex<players.size();playerIndex++){
-        printf("Adding %s\n",players[playerIndex]["name"].get<string>().c_str());
         ui->playerChooser->addItem(QString::fromStdString(players[playerIndex]["name"]));
     }
 
@@ -68,16 +67,18 @@ void WelcomeWindow::startGame(){
 
     auto graphicsView=new QGraphicsView(win);
     auto playerIndex=this->ui->playerChooser->currentIndex()+1;
+    graphicsView->setFixedSize(800,600);
+    graphicsView->setHorizontalScrollBarPolicy(Qt::ScrollBarPolicy::ScrollBarAlwaysOff);
+    graphicsView->setVerticalScrollBarPolicy(Qt::ScrollBarPolicy::ScrollBarAlwaysOff);
+
     auto scene=new GameScene(graphicsView,playerIndex);
     graphicsView->setScene(scene);
 
-    makeFit(win, graphicsView);
+    win->setFixedSize(800,600);
     win->show();
 }
 
 void WelcomeWindow::continueGame(){
-
-
     ifstream storageFileStream("storage.json");
     json storage;
     storageFileStream >> storage;
@@ -92,10 +93,14 @@ void WelcomeWindow::continueGame(){
 
     auto graphicsView=new QGraphicsView(win);
 
+    graphicsView->setFixedSize(800,600);
+    graphicsView->setHorizontalScrollBarPolicy(Qt::ScrollBarPolicy::ScrollBarAlwaysOff);
+    graphicsView->setVerticalScrollBarPolicy(Qt::ScrollBarPolicy::ScrollBarAlwaysOff);
+
     auto scene=new GameScene(storage,graphicsView);
     graphicsView->setScene(scene);
 
-    makeFit(win, graphicsView);
+    win->setFixedSize(800,600);
     win->show();
 }
 

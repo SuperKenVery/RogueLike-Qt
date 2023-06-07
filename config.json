@@ -18,12 +18,12 @@
             "name":"Tim",
             "image":"images/player.png",
             "life":100,
-            "speed":10,
+            "speed":5,
             "size":50,
             "enhance_hp": [100, 200, 300, 400, 500,1000,2000],
             "weapon":{
                 "attack":5,
-                "range":250
+                "range":100
             }
         },
         {
@@ -35,7 +35,7 @@
             "enhance_hp": [100, 200, 300, 400, 500],
             "weapon":{
                 "attack":5,
-                "range":250
+                "range":100
             }
         }
     ],
@@ -51,7 +51,7 @@
             "size":50,
             "weapon":{
                 "attack":10,
-                "range":50
+                "range":40
             }
         },
         {
@@ -62,7 +62,7 @@
             "size":50,
             "weapon":{
                 "attack":5,
-                "range":250
+                "range":100
             }
         },
         {
@@ -73,8 +73,26 @@
             "size":50,
             "weapon":{
                 "attack":5,
-                "range":250
+                "range":100
             }
         }
+    ],
+    "drops":[
+        {
+            "image":"images/drops/plus.png",
+            "action":"attack +10",
+            "size":15
+        },
+        {
+            "image":"images/drops/lightning.png",
+            "action":"speed +10",
+            "size":15
+        },
+        {
+            "image":"images/drops/vegetable.jpeg",
+            "action":"life +10",
+            "size":15
+        }
+
     ]
 }

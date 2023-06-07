@@ -31,7 +31,7 @@ public:
     QRectF boundingRect() const override final;
     void advance(int step) override;
     vector<Animation*> animations;
-protected:
+
     uint life,size,total_life;
     QImage image;
 private:

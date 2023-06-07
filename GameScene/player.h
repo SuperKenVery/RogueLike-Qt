@@ -14,7 +14,7 @@
 #include "Weapon.h"
 using json=nlohmann::json;
 
-typedef vector<Base*> attackable_list;
+typedef vector<pair<int,Base*> > attackable_list;
 
 class Player : public Base
 {
@@ -25,6 +25,8 @@ public:
     void die() override;
     json dumpState() override;
     void resumeState(json storage) override;
+    Weapon *weapon;
+    uint speed;
 
 protected:
     void advance(int step) override;
@@ -33,9 +35,7 @@ protected:
 
 private:
     void enhance();
-    Weapon *weapon;
     QVector2D direction=QVector2D(0,0);
-    uint speed;
     vector<uint> enhance_hp;
     vector<uint>::iterator next_enhance_hp;
     uint enhanceCount=0;

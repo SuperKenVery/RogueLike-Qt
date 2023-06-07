@@ -51,6 +51,8 @@ set(PROJECT_SOURCES
         GameScene/ResumeFailedWindow/resumefailedwindow.h
         GameScene/ResumeFailedWindow/resumefailedwindow.cpp
         GameScene/ResumeFailedWindow/resumefailedwindow.ui
+        GameScene/Drops.h
+        GameScene/Drops.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

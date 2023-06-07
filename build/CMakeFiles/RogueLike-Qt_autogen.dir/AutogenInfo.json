@@ -308,6 +308,12 @@
 			null
 		],
 		[
+			"/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Drops.h",
+			"MU",
+			"QPTSQ33FLT/moc_Drops.cpp",
+			null
+		],
+		[
 			"/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Enemy.h",
 			"MU",
 			"QPTSQ33FLT/moc_Enemy.cpp",
@@ -438,6 +444,11 @@
 		],
 		[
 			"/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/DieWindow/diewindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Drops.cpp",
 			"MU",
 			null
 		],

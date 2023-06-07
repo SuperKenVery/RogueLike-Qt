@@ -20,19 +20,18 @@ uint Base::harm(uint damage){
     if(damage>this->life){
         real_damage=this->life;
         this->life=0;
-        DBGPRINT("Player die!\n")
+        this->animations.push_back(new HarmAnimation(
+            this,real_damage,this->debug
+        ));
         this->die();
         return real_damage;
     }else{
         this->life-=damage;
         real_damage=damage;
-
-        DBGPRINT("Player life -%d to %d\n",real_damage,this->life)
+        this->animations.push_back(new HarmAnimation(
+            this,real_damage,this->debug
+        ));
     }
-
-    this->animations.push_back(new HarmAnimation(
-        this,real_damage,this->debug
-    ));
 
     return real_damage;
 }

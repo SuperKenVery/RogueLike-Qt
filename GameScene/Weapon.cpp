@@ -56,11 +56,10 @@ void Weapon::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QW
 }
 
 void Weapon::advance(int step){
-    // DBGPRINT("Advance count=%d step=%d\n",count,step);
     this->count+=step;
     if(this->count>100){
         auto attackables_copy=*this->attackables;
-        for(auto o: attackables_copy){
+        for(auto [index,o]: attackables_copy){
             auto x1=o->pos().x(),y1=o->pos().y(),x2=this->parentItem()->pos().x(),y2=this->parentItem()->pos().y();
             auto dist=sqrt((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
             if(dist<=this->range){

@@ -19,7 +19,7 @@ using namespace std;
 
 class Enemy;
 typedef std::function<void(Enemy*)> move_strategy;
-typedef vector<Base*> attackable_list;
+typedef vector<pair<int,Base*> > attackable_list;
 
 class Enemy: public Base{
 public:
@@ -39,6 +39,7 @@ private:
     move_strategy strategy;
     QVector2D direction;
     string moveStrategyName;
+    json config;
 };
 
 #endif

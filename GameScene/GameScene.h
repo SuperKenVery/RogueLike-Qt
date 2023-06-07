@@ -20,6 +20,7 @@ class Map;
 class MapBlock;
 class Enemy;
 class Base;
+class Drop;
 
 class GameScene: public QGraphicsScene{
     Q_OBJECT
@@ -38,19 +39,19 @@ public:
     json config;
     Map *map;
     Player *player;
-    vector<Base*> enemies,players;
+    // vector<Base*> enemies,players;
+    vector<pair<int,Base*> > enemies,players; // index,obj
+    vector<pair<int,Drop*> > drops; // index,obj
     QTimer enemyCreationTimer;
     void die();
     void debug_panel();
 public slots:
     void newEnemy();
-    void deleteEnemy(Enemy *e);
 private:
     void waitUntilClose(QWidget *w);
     QTimer *timer;
     time_t startTime;
     uint playerIndex;
-    vector<ulong> enemyIndexes;
     bool shouldSaveState=true;
 };
 

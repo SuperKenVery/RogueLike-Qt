@@ -112,7 +112,6 @@ void Player::advance(int step){
 
     // Enhance
     if(this->weapon->hp>=*this->next_enhance_hp){
-        printf("HP is %d, enhancing...\n",this->weapon->hp);
         this->weapon->hp-=*this->next_enhance_hp;
         (*this->next_enhance_hp)++;
         if(this->next_enhance_hp==this->enhance_hp.end()){

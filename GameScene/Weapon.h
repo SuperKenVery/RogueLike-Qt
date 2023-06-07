@@ -12,7 +12,7 @@ using json=nlohmann::json;
 using namespace std;
 
 class Base;
-typedef vector<Base*> attackable_list;
+typedef vector<pair<int,Base*> > attackable_list;
 
 class Weapon: public QGraphicsItem{
 public:
@@ -20,16 +20,15 @@ public:
     QRectF boundingRect() const override;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
     void advance(int step) override;
-    void setAttackables(vector<Base*> *attackables);
     json dumpState();
     void resumeState(json storage);
     uint hp=0;
     uint attack,range;
     bool debug=false;
 private:
-    vector<Base*> *attackables;
+    attackable_list *attackables;
     uint count=0;
-    constexpr static uint total_frames=100;
+    constexpr static uint total_frames=50;
     uint frame=total_frames;
 };
 

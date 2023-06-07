@@ -715,6 +715,8 @@ RogueLike-Qt_autogen/timestamp: \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Base.h \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/DieWindow/diewindow.cpp \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/DieWindow/diewindow.h \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Drops.cpp \
+	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Drops.h \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Enemy.cpp \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/Enemy.h \
 	/Users/ken/Codes/RogueLike/RogueLike-Qt/GameScene/EnhanceOpt/EnhanceOption.cpp \
